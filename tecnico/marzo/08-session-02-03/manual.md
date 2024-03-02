@@ -155,6 +155,29 @@ En general, los bloques de notas deben usarse con moderación porque pueden resu
 
 En general, los bloques de notas deben usarse con moderación porque pueden resultar molestos. Aunque también se admiten bloques de código, imágenes, listas y vínculos, intente que los bloques de notas sean simples y directos.
 
+## Vídeos
+Los vídeos incrustados no se representan de forma nativa en Markdown, pero puede utilizar esta extensión de Markdown.
+
+`>[!VIDEO](https://www.youtube.com/watch?v=Yc-7IQqcqeM&ab_channel=RealMadrid)`
+
+>[!VIDEO](https://www.youtube.com/watch?v=Yc-7IQqcqeM&ab_channel=RealMadrid)
+
+## Más como esto
+El componente “Más como esto” de AEM aparece al final de un artículo. Muestra vínculos relacionados. Cuando se representa el artículo, se le puede dar el mismo formato que a los encabezados de nivel 2 (##) sin que se agreguen al mini-TOC.
+`>[!MORELIKETHIS]`
+
+`>`
+
+`>* [Articulo 1](https://elpais.com/noticias/real-madrid/)`
+
+`>* [Artículo 2](https://elpais.com/noticias/real-madrid/)`
+
+>[!MORELIKETHIS]
+>
+>* [Articulo 1](https://elpais.com/noticias/real-madrid/)
+>* [Artículo 2](https://elpais.com/noticias/real-madrid/)
+
+
 
 
 
