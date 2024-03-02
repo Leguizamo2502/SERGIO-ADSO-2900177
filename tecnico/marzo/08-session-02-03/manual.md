@@ -3,10 +3,15 @@
 ## Encabezados
 Para crear un encabezado, utilice el símbolo de almohadilla (#) al principio de una línea:
 
+`# Nivel 1`
 # Nivel 1 (Titulo articulo)
+`## Nivel 2`
 ## Nivel 2
+`### Nivel 3`
 ### Nivel 3
+`#### Nivel 4`
 #### Nivel 4
+`##### Nivel 5`
 ##### Nivel 5
 
 # Texto básico
@@ -15,12 +20,18 @@ En Markdown, un párrafo no requiere una sintaxis especial.
 Para aplicar negrita al texto, se escribe entre dos asteriscos. Para aplicar cursiva al texto, se escribe entre un solo asterisco:
 
 Este texto está `**en negrita**`.
+**en negrita**
+
 Este texto está `*en cursiva*`.
+*en cursiva*
+
 Este texto está `***en negrita y cursiva***`.
+***en negrita y cursiva***
+
 Para ignorar los caracteres de formato de Markdown, coloca una barra invertida \ antes del carácter:
 
 Esto no está `\*en cursiva\*`.
-
+\*en cursiva\*
 
 # Listas numeradas y listas con viñetas
 
