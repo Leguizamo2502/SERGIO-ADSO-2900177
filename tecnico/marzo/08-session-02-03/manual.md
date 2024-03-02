@@ -115,13 +115,18 @@ Este es un `código en línea` dentro de un párrafo de texto.
 # Extensiones de Markdown personalizadas
 En los artículos de Adobe se utiliza la puntuación estándar para la mayoría de los formatos de artículo, como párrafos, vínculos, listas y encabezados. Para obtener un formato enriquecido, los artículos pueden utilizar funciones ampliadas de Markdown, como:
 
-Bloques de notas
-Vídeos incrustados
-Etiquetas de traducción
-Propiedades del componente, como asignar un ID de encabezado diferente a un encabezado y especificar un tamaño de imagen
+* Bloques de notas
+
+* Vídeos incrustados
+
+* Etiquetas de traducción
+
+* Propiedades del componente, como asignar un ID de encabezado diferente a un encabezado y especificar un tamaño de imagen
+
 Utilice el símbolo de citas de bloque de Markdown (>) al principio de cada línea para enlazar un componente ampliado, como una nota.
 
 Algunos elementos comunes de Markdown, como encabezados y bloques de código, incluyen propiedades ampliadas. Si necesita cambiar las propiedades predeterminadas, agregue los parámetros entre llaves /{ /} después del componente. Las propiedades ampliadas se describen en contexto.
+
 ## Bloques de notas
 Bloques de notas
 Puede elegir entre estos tipos de bloques de notas para llamar la atención sobre un contenido específico:
