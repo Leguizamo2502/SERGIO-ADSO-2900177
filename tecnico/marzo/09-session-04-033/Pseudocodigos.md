@@ -31,12 +31,29 @@ FinAlgoritmo
 # Promedio alumno
 ```
 Algoritmo 
+
    Definir exMat, exFi, exQui Como Real
    Definir ta1Mat, ta2Mat, ta3Mat Como Real
    Definir ta1Fi, ta2Fi Como Real
    Definir ta1Qui, ta2Qui, ta3Qui Como Real
    Definir proMat, proFi, proQui Como Real
    Definir proGen como Real
+
+   exMat <- 0.0
+   exFi <- 0.0
+   exQui <-0.0
+   ta1Mat <- 0.0
+   ta2Mat <- 0.0
+   ta3Mat <- 0.0
+   ta1Fi <- 0.0
+   ta2Fi <- 0.0
+   ta1Qui <- 0.0
+   ta2Qui <- 0.0
+   ta3Qui <- 0.0
+   proMat <-0.0
+   proFi <- 0.0
+   proQui <- 0.0
+   proGen <- 0.0
 
    Escribir "Ingrese la calificacion del examen de matematicas"
    Leer exMat
@@ -78,6 +95,7 @@ Fin
 ```
 Inicio
     Definir n1 Como Real
+	n1 <- 0.0
 	Escribir "Ingrese el numero real"
 	Leer n1
 	Si n1 > 0 o  n1 < 0 Entonces
@@ -91,6 +109,7 @@ Fin
 ```
 Inicio
     Definir n1 Como Real
+	n1 <- 0.0
 	Escribir "Ingrese el numero real"
 	Leer n1
 	Si n1 < 200 o n1 > 200 Entonces
@@ -104,6 +123,7 @@ Fin
 ```
 Inicio 
     Definir n1 Como Real
+	n1 <- 0.0
 	Escribir "Ingrese el numero real"
 	Leer n1
 	Si n1 >= 50 Y n1 <= 100 Entonces
