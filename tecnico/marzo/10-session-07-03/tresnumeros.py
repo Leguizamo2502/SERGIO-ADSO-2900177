@@ -12,15 +12,15 @@ try:
         mayor = numero1
         if numero2 > mayor:
             mayor = numero2
-        if numero3 > mayor:
-            mayor = numero3
+            if numero3 > mayor:
+                mayor = numero3
 
         # Determinar el menor
         menor = numero1
         if numero2 < menor:
             menor = numero2
-        if numero3 < menor:
-            menor = numero3
+            if numero3 < menor:
+                menor = numero3
 
         # Determinar el intermedio
         intermedio = (numero1 + numero2 + numero3) - mayor - menor
