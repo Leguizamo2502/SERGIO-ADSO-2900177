@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contar1;
+        let contar2;
+        let hasta;
+        let multiplicacion;
+        let par;
+        let impar;
+
+        contar1=0;
+        hasta=5;
+        par=0;
+        impar=0;
+
+        while(contar1<hasta){
+            contar2=0
+            contar1=contar1+1;
+            while(contar2<hasta){
+                contar2=contar2+1;
+                multiplicacion=contar1*contar2;
+                console.log(contar1+" x "+contar2+" = "+multiplicacion);
+                if(multiplicacion%2 == 0){
+                    par=par+1;
+                    console.log("Buzz");
+                }else{
+                    impar=impar+1
+                    console.log("Bass");
+                }
+            }
+        }
+        console.log("hay "+par+" pares");
+        console.log("hay "+impar+" impares");
+    </script>
+</body>
+</html>

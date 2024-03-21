@@ -9,16 +9,14 @@
     <script>
         let contar;
         let numero;
+        let multiplicacion;
 
-        numero = 20;
+        numero=5;
+        multiplicacion= 0;
 
         for(contar=1;contar<=numero;contar++){
-            if (contar % 2 == 0){
-                console.log(contar+" es par\n");
-            }
-            else{
-                console.log(contar + " es impar\n");
-            }
+            multiplicacion=numero*contar;
+            console.log(numero+" x "+contar+" = "+multiplicacion);
         }
     </script>
 </body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tabla;
+        let multiplicar;
+        let resultado;
+        let par;
+        let impar;
+        let cTabla;
+        let cMult;
+
+        tabla=5;
+        multiplicar=5;
+        par=0;
+        impar=0;
+
+       for(cTabla=1;cTabla<=tabla;cTabla++){
+        for(cMult=1;cMult<=multiplicar;cMult++){
+            resultado=cTabla*cMult;
+            
+            if(resultado%2==0){
+                par=par+1;
+                console.log("Buzz");
+            }else{
+                impar=impar+1;
+                console.log("Bass")
+            }
+            console.log(cTabla+" x "+cMult+" = "+resultado);
+        }
+       }
+        console.log(par);
+        console.log(impar);
+    </script>
+</body>
+</html>

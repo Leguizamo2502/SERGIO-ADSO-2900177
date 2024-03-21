@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valorDia;
+        let diaTrabajado;
+        let salario;
+        let salud;
+        let pension;
+        let arl;
+        let descuento;
+        let pagoTotal;
+        let sMinimo;
+        let retencion;
+        let sbTransporte;
+
+        retencion=0
+        sbTransporte= 0;
+        sMinimo=1300000
+        valorDia=100000;
+        diaTrabajado= 10;
+        salario= valorDia*diaTrabajado;
+
+        salud=salario*0.12;
+        pension=salario*0.16;
+        arl=salario*0.052;
+
+        if(salario<(2*sMinimo)){
+            sbTransporte=sbTransporte+114000;
+        }else{
+            sbTransporte+0;
+        }
+        if(salario>(4*sMinimo)){
+            retencion=salario*0.04;
+        }else{
+            retencion=0;
+        }
+        descuento=salud+pension+arl;
+        pagoTotal=(salario+sbTransporte)-(descuento+retencion);
+
+        console.log(pagoTotal)
+
+
+    </script>
+</body>
+</html>
