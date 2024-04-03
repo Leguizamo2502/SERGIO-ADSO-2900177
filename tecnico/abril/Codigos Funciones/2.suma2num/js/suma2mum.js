@@ -11,9 +11,5 @@ const suma = function(pnum1,pnum2){
     sumar = num1 + num2;
     return sumar;
 }
-const resultado = function(presultado,pnum1,pnum2){
-    let result = presultado;
-    if  (result == "suma"){
-        return suma;
-    }
-}
+
+   
