@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/pagoF.js"></script>
+</head>
+<body>
+    <script>
+        let salud;
+        let pension;
+        let arl;
+        salud=pagoSalario(30,32000)*saludf(0.12);
+        pension=pagoSalario(30,32000)*pensionf(0.16);
+        arl=pagoSalario(30,32000)*arlf(0.052);
+
+        let descuento= salud+pension+arl;
+        let pagoTotal = pagoSalario(30, 32000) - descuento;
+
+        console.log(pagoSalario(30,32000));
+        console.log(salud);
+        console.log(pension);
+        console.log(arl);
+        console.log(descuento);
+        console.log(pagoTotal);
+    </script>
+</body>
+</html>

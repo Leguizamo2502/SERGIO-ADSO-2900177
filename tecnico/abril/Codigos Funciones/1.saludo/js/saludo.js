@@ -10,7 +10,7 @@ function saludo(psaludo){
     return saludar;
 }
 
-function saludo2(){
-    let saludar =  "Hola Mundo";
-    return saludar;
+const saludo2 =function(psaludo){
+    let saludaa= psaludo;
+   return saludaa;
 }
