@@ -10,7 +10,7 @@ function saludo(psaludo){
     return saludar;
 }
 
-const saludoExp = function(psaludo){
-    let saludar = psaludo
+function saludo2(){
+    let saludar =  "Hola Mundo";
     return saludar;
 }
