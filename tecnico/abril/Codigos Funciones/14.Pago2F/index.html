@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/pago2F.js"></script>
+</head>
+<body>
+    <script>
+        let salario = CalSalario(100000,10);
+        console.log("Salario:"+salario);
+
+        let salud = calSalud(salario,0.12);
+        console.log("Salud:"+salud);
+        let pension = calPension(salario,0.16);
+        console.log("Pension:"+pension);
+        let arl = calArl(salario,0.052);
+        console.log("Arl:"+arl);
+
+        let descuento = calDescuento(salud,pension,arl);
+        console.log("Descuento:"+descuento);
+
+        let subTransporte = calSubTransporte(salario,1300000);
+        console.log("Subsidio de Transporte:"+subTransporte);
+
+        let retencion = calRetencion(salario,1300000);
+        console.log("Retencion:"+retencion);
+
+        let pagoTotal = calPagoTotal(salario,subTransporte,descuento,retencion);
+        console.log("Pago Total:"+pagoTotal);
+
+
+        console.log("Constante:");
+
+
+        let salario2 = CalSalario(100000,10);
+        console.log("Salario:"+salario2);
+
+        let salud2 = calSalud(salario2,0.12);
+        console.log("Salud:"+salud2);
+        let pension2 = calPension(salario2,0.16);
+        console.log("Pension:"+pension2);
+        let arl2 = calArl(salario2,0.052);
+        console.log("Arl:"+arl2);
+
+        let descuento2 = calDescuento(salud2,pension2,arl2);
+        console.log("Descuento:"+descuento2);
+
+        let subTransporte2 = calSubTransporte(salario2,1300000);
+        console.log("Subsidio de Transporte:"+subTransporte2);
+
+        let retencion2 = calRetencion(salario2,1300000);
+        console.log("Retencion:"+retencion2);
+
+        let pagoTotal2 = calPagoTotal(salario2,subTransporte2,descuento2,retencion2);
+        console.log("Pago Total:"+pagoTotal2);
+
+    </script>
+</body>
+</html>
