@@ -34,26 +34,26 @@
         console.log("Constante:");
 
 
-        let salario2 = CalSalario(100000,10);
+        let salario2 = CalSalario2(100000,60);
         console.log("Salario:"+salario2);
 
-        let salud2 = calSalud(salario2,0.12);
+        let salud2 = calSalud2(salario2,0.12);
         console.log("Salud:"+salud2);
-        let pension2 = calPension(salario2,0.16);
+        let pension2 = calPension2(salario2,0.16);
         console.log("Pension:"+pension2);
-        let arl2 = calArl(salario2,0.052);
+        let arl2 = calArl2(salario2,0.052);
         console.log("Arl:"+arl2);
 
-        let descuento2 = calDescuento(salud2,pension2,arl2);
+        let descuento2 = calDescuento2(salud2,pension2,arl2);
         console.log("Descuento:"+descuento2);
 
-        let subTransporte2 = calSubTransporte(salario2,1300000);
+        let subTransporte2 = calSubTransporte2(salario2,1300000);
         console.log("Subsidio de Transporte:"+subTransporte2);
 
-        let retencion2 = calRetencion(salario2,1300000);
+        let retencion2 = calRetencion2(salario2,1300000);
         console.log("Retencion:"+retencion2);
 
-        let pagoTotal2 = calPagoTotal(salario2,subTransporte2,descuento2,retencion2);
+        let pagoTotal2 = calPagoTotal2(salario2,subTransporte2,descuento2,retencion2);
         console.log("Pago Total:"+pagoTotal2);
 
     </script>
