@@ -9,15 +9,15 @@
 <body>
     <script>
         let salario = calcularSalario(50000, 30);
-        console.log("Salario: "+salario);
+        console.log("Salario: "+salario); 
 
-        let Salud = calcularSalud(salario, 0.12);
+        let Salud = calcularSalud(salario);
         console.log("salud: "+Salud);
 
-        let pension  = calcularPension(salario, 0.16);
+        let pension  = calcularPension(salario);
         console.log("Pensión: "+pension);
 
-        let arl = calcularArl(salario, 0.052);
+        let arl = calcularArl(salario);
         console.log("ARL: "+arl);
 
 
@@ -34,13 +34,13 @@
         let salario2 = calcularSalario2(50000, 30);
         console.log("Salario: "+salario2);
 
-        let Salud2 = calcularSalud2(salario2, 0.12);
+        let Salud2 = calcularSalud2(salario2);
         console.log("salud: "+Salud2);
 
-        let pension2  = calcularPension2(salario2, 0.16);
+        let pension2  = calcularPension2(salario2);
         console.log("Pensión: "+pension2);
 
-        let arl2 = calcularArl2(salario2, 0.052);
+        let arl2 = calcularArl2(salario2);
         console.log("ARL: "+arl2);
         let descuento2 = calcularDescuento2(Salud2, pension2, arl2);
         console.log("Descuento : "+descuento2);

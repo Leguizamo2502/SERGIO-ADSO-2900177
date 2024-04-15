@@ -12,24 +12,21 @@ function calcularSalario(pavalorDia, pdiasTrab) {
 }
 
 
-function calcularSalud(psalario, pporcentaje1) {
+function calcularSalud(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje1;
-    let salud = salarioo * porcentaje;
+    let salud = salarioo * 0.12;
     return salud;
 }
 
-function calcularPension(psalario, pporcentaje2) {
+function calcularPension(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje2;
-    let pension = salarioo * porcentaje;
+    let pension = salarioo * 0.16;
     return pension;
 }
 
-function calcularArl(psalario, pporcentaje3) {
+function calcularArl(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje3;
-    let arl = salarioo * porcentaje;
+    let arl = salarioo * 0.052;
     return arl;
 }
 
@@ -64,22 +61,19 @@ const calcularSalario2 = function(pavalorDia, pdiasTrab) {
     return   salario;
 }
 
-const calcularSalud2 = function(psalario, pporcentaje1) {
+const calcularSalud2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje1;
-    let salud = salarioo * porcentaje;
+    let salud = salarioo * 0.12;
     return salud;
 }
-const calcularPension2 = function(psalario, pporcentaje2) {
+const calcularPension2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje2;
-    let pension = salarioo * porcentaje;
+    let pension = salarioo * 0.16;
     return pension;
 }
-const calcularArl2 = function(psalario, pporcentaje3) {
+const calcularArl2 = function(psalario) {
     let salarioo = psalario;
-    let porcentaje = pporcentaje3;
-    let arl = salarioo * porcentaje;
+    let arl = salarioo * 0.052;
     return arl;
 }
 

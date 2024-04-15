@@ -4,63 +4,35 @@
  * Fecha: jueves 04 de abril de 2024
  * 
  */
-function calEdadUno(pfecNac, pfecAct){
+function calEdad(pfecNac, pfecAct){
     let edad;
     let fecNac = pfecNac;
     let fecAct = pfecAct;
     edad = fecAct - fecNac;
     return edad;
 }
-function calEdadDos(pfecNac, pfecAct){
-    let edad;
-    let fecNac = pfecNac;
-    let fecAct = pfecAct;
-    edad = fecAct - fecNac;
-    return edad;
-}
-function calEdadTres(pfecNac, pfecAct){
-    let edad;
-    let fecNac = pfecNac;
-    let fecAct = pfecAct;
-    edad = fecAct - fecNac;
-    return edad;
-}
-function promedio (pedadUno,pedadDos,pedadTres){
-    let edadUno = pedadUno;
-    let edadDos = pedadDos;
-    let edadTres = pedadTres;
-    let promedio = (edadUno+edadDos+edadTres)/3;
+function promedio(pedad1,pedad2,pedad3){
+    let edad1 = pedad1;
+    let edad2 = pedad2;
+    let edad3 =pedad3;
+    let promedio = (edad1+edad2+edad3)/3;
     return promedio;
 }
 
 /**
  * constante 
  */
-const calEdadUno2=function(pfecNac, pfecAct){
+const calEdad2=function(pfecNac, pfecAct){
     let edad;
     let fecNac = pfecNac;
     let fecAct = pfecAct;
     edad = fecAct - fecNac;
     return edad;
 }
-const calEdadDos2=function(pfecNac, pfecAct){
-    let edad;
-    let fecNac = pfecNac;
-    let fecAct = pfecAct;
-    edad = fecAct - fecNac;
-    return edad;
-}
-const calEdadTres2=function(pfecNac, pfecAct){
-    let edad;
-    let fecNac = pfecNac;
-    let fecAct = pfecAct;
-    edad = fecAct - fecNac;
-    return edad;
-}
-const promedio2 =function(pedadUno,pedadDos,pedadTres){
-    let edadUno = pedadUno;
-    let edadDos = pedadDos;
-    let edadTres = pedadTres;
-    let promedio = (edadUno+edadDos+edadTres)/3;
+const promedio2 =function(pedad1,pedad2,pedad3){
+    let edad1 = pedad1;
+    let edad2 = pedad2;
+    let edad3 =pedad3;
+    let promedio = (edad1+edad2+edad3)/3;
     return promedio;
 }

@@ -13,26 +13,23 @@ function CalSalario(pvDia,pdTra){
 
 }
 
-function calSalud(psalario,pporcentaje1){
+function calSalud(psalario){
     let salario= psalario;
-    let porcentaje1= pporcentaje1;
-    let salud = salario*porcentaje1;
+    let salud = salario*0.12;
     return salud;
 
 }
 
-function calPension(psalario,pporcentaje2){
+function calPension(psalario){
     let salario= psalario;
-    let porcentaje2= pporcentaje2;
-    let pension = salario*porcentaje2;
+    let pension = salario*0.16;
     return pension;
 
 }
 
-function calArl(psalario,pporcentaje3){
+function calArl(psalario){
     let salario= psalario;
-    let porcentaje3= pporcentaje3;
-    let arl = salario*porcentaje3;
+    let arl = salario*0.052;
     return arl;
 }
 
@@ -45,22 +42,20 @@ function calDescuento(psalud,ppension,parl){
     return descuento;
 }
 
-function calSubTransporte(psalario,psMinimo){
+function calSubTransporte(psalario){
     let salario= psalario;
-    let sMinimo= psMinimo;
     let subTransporte = 0;
-    if(salario<(2*sMinimo)){
+    if(salario<(2*1300000)){
         subTransporte = subTransporte+114000;
     }else{
         subTransporte = subTransporte+0;
     }
     return subTransporte;
 }
-function calRetencion(psalario,psMinimo){
+function calRetencion(psalario){
     let salario= psalario;
-    let sMinimo= psMinimo;
     let retencion= 0;
-    if(salario>(4*sMinimo)){
+    if(salario>(4*1300000)){
         retencion=salario*0.04;
     }else{
         retencion=retencion+0;
@@ -92,26 +87,23 @@ const CalSalario2=function(pvDia,pdTra){
 
 }
 
-const calSalud2=function(psalario,pporcentaje1){
+const calSalud2=function(psalario){
     let salario= psalario;
-    let porcentaje1= pporcentaje1;
-    let salud = salario*porcentaje1;
+    let salud = salario*0.12;
     return salud;
 
 }
 
-const calPension2=function(psalario,pporcentaje2){
+const calPension2=function(psalario){
     let salario= psalario;
-    let porcentaje2= pporcentaje2;
-    let pension = salario*porcentaje2;
+    let pension = salario*0.16;
     return pension;
 
 }
 
-const calArl2=function(psalario,pporcentaje3){
+const calArl2=function(psalario){
     let salario= psalario;
-    let porcentaje3= pporcentaje3;
-    let arl = salario*porcentaje3;
+    let arl = salario*0.052;
     return arl;
 }
 
@@ -124,22 +116,20 @@ const calDescuento2=function(psalud,ppension,parl){
     return descuento;
 }
 
-const calSubTransporte2=function(psalario,psMinimo){
+const calSubTransporte2=function(psalario){
     let salario= psalario;
-    let sMinimo= psMinimo;
     let subTransporte = 0;
-    if(salario<(2*sMinimo)){
+    if(salario<(2*1300000)){
         subTransporte = subTransporte+114000;
     }else{
         subTransporte = subTransporte+0;
     }
     return subTransporte;
 }
-const calRetencion2=function(psalario,psMinimo){
+const calRetencion2=function(psalario){
     let salario= psalario;
-    let sMinimo= psMinimo;
     let retencion= 0;
-    if(salario>(4*sMinimo)){
+    if(salario>(4*1300000)){
         retencion=salario*0.04;
     }else{
         retencion=retencion+0;

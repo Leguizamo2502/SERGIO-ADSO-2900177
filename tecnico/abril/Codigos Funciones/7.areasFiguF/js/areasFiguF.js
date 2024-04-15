@@ -5,49 +5,51 @@
  * 
  */
 function cuadrado(plado){
-    let areaCuadrado
+    let area
     let lado = plado;
-    areaCuadrado=lado*lado;
-    return areaCuadrado;
+    area=lado*lado;
+    return area;
 }
 
 function rectangulo(pbase,paltura){
-    let areaRectangulo;
+    let area;
     let base = pbase;
     let altura = paltura;
-    areaRectangulo = base * altura;
-    return areaRectangulo;
+    area = base * altura;
+    return area;
     
 }
 function triangulo(pbase,paltura){
-    let areaTriangulo;
+    let area;
     let base = pbase;
     let altura = paltura
-    areaTriangulo = (base * altura) / 2;
-    return areaTriangulo;
+    area = (base * altura) / 2;
+    return area;
 
 }
-
+/**  
+ * Constante
+*/
 const cuadrado2=function(plado){
-    let areaCuadrado
+    let area;
     let lado = plado;
-    areaCuadrado=lado*lado;
-    return areaCuadrado;
+    area=lado*lado;
+    return area;
 }
 
 const rectangulo2=function(pbase,paltura){
-    let areaRectangulo;
+    let area;
     let base = pbase;
     let altura = paltura;
-    areaRectangulo = base * altura;
-    return areaRectangulo;
+    area = base * altura;
+    return area;
     
 }
 const  triangulo2=function(pbase,paltura){
-    let areaTriangulo;
+    let area;
     let base = pbase;
     let altura = paltura
-    areaTriangulo = (base * altura) / 2;
-    return areaTriangulo;
+    area = (base * altura) / 2;
+    return area;
 
 }

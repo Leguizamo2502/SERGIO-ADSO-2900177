@@ -8,9 +8,9 @@
 </head>
 <body>
     <script>
-        let edadUno = calEdadUno(2007,2024);
-        let edadDos = calEdadDos(2000,2024);
-        let edadTres = calEdadTres(1990,2024);
+        let edadUno = calEdad(2007,2024);
+        let edadDos = calEdad(2001,2024);
+        let edadTres = calEdad(1990,2024);
 
         if(edadUno>=18){
             console.log(edadUno+" Es mayor de edad:");
@@ -36,9 +36,9 @@
 
         console.log("Constante:");
 
-        let edadUno2 = calEdadUno2(2009,2024);
-        let edadDos2 = calEdadDos2(2003,2024);
-        let edadTres2 = calEdadTres2(1994,2024);
+        let edadUno2 = calEdad2(2009,2024);
+        let edadDos2 = calEdad2(2003,2024);
+        let edadTres2 = calEdad2(1994,2024);
 
         if(edadUno2>=18){
             console.log(edadUno2+" Es mayor de edad:");
@@ -55,7 +55,7 @@
         }else{
             console.log(edadTres2+" No es mayor de edad");
         }
-        let promedioEdad2 = promedio2(edadUno,edadDos,edadTres)
+        let promedioEdad2 = promedio2(edadUno2,edadDos2,edadTres2)
         if(promedioEdad2>=18){
             console.log(promedioEdad2+" El promedio de edades es mayor a 18");
         }else{

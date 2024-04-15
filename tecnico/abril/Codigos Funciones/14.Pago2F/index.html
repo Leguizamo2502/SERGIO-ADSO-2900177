@@ -11,20 +11,20 @@
         let salario = CalSalario(100000,10);
         console.log("Salario:"+salario);
 
-        let salud = calSalud(salario,0.12);
+        let salud = calSalud(salario);
         console.log("Salud:"+salud);
-        let pension = calPension(salario,0.16);
+        let pension = calPension(salario);
         console.log("Pension:"+pension);
-        let arl = calArl(salario,0.052);
+        let arl = calArl(salario);
         console.log("Arl:"+arl);
 
         let descuento = calDescuento(salud,pension,arl);
         console.log("Descuento:"+descuento);
 
-        let subTransporte = calSubTransporte(salario,1300000);
+        let subTransporte = calSubTransporte(salario);
         console.log("Subsidio de Transporte:"+subTransporte);
 
-        let retencion = calRetencion(salario,1300000);
+        let retencion = calRetencion(salario);
         console.log("Retencion:"+retencion);
 
         let pagoTotal = calPagoTotal(salario,subTransporte,descuento,retencion);
@@ -37,20 +37,20 @@
         let salario2 = CalSalario2(100000,60);
         console.log("Salario:"+salario2);
 
-        let salud2 = calSalud2(salario2,0.12);
+        let salud2 = calSalud2(salario2);
         console.log("Salud:"+salud2);
-        let pension2 = calPension2(salario2,0.16);
+        let pension2 = calPension2(salario2);
         console.log("Pension:"+pension2);
-        let arl2 = calArl2(salario2,0.052);
+        let arl2 = calArl2(salario2);
         console.log("Arl:"+arl2);
 
         let descuento2 = calDescuento2(salud2,pension2,arl2);
         console.log("Descuento:"+descuento2);
 
-        let subTransporte2 = calSubTransporte2(salario2,1300000);
+        let subTransporte2 = calSubTransporte2(salario2);
         console.log("Subsidio de Transporte:"+subTransporte2);
 
-        let retencion2 = calRetencion2(salario2,1300000);
+        let retencion2 = calRetencion2(salario2);
         console.log("Retencion:"+retencion2);
 
         let pagoTotal2 = calPagoTotal2(salario2,subTransporte2,descuento2,retencion2);
