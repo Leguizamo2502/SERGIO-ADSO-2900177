@@ -8,23 +8,23 @@
 </head>
 <body>
     <script>
-        let nota1 = calNota1(1,0.2);
-        let nota2 = calNota2(4,0.35);
-        let nota3 = calNota3(3,0.45);
+        let notaUno = calNota(1,0.2);
+        let notaDos = calNota(4,0.35);
+        let notaTres = calNota(3,0.45);
 
-        let sumaporc = calSumaPorcentaje(nota1,nota2,nota3);
+        let sumaporc = calSumaPorcentaje(notaUno,notaDos,notaTres);
 
-        console.log(calTipo(sumaporc));
+        console.log(sumaporc+calTipo(sumaporc));
 
         console.log("Constante:");
 
-        let nota12 = calNota12(5,0.2);
-        let nota22 = calNota22(5,0.35);
-        let nota32 = calNota32(3,0.45);
+        let notaUno2 = calNota2(5,0.2);
+        let notaDos2 = calNota2(5,0.35);
+        let notaTres2 = calNota2(3,0.45);
 
-        let sumaporc2 = calSumaPorcentaje(nota12,nota22,nota32);
+        let sumaporc2 = calSumaPorcentaje(notaUno2,notaDos2,notaTres2);
 
-        console.log(calTipo2(sumaporc));
+        console.log(sumaporc2+calTipo2(sumaporc2));
     </script>
 </body>
 </html>

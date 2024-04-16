@@ -7,11 +7,12 @@
 function calTabla(pnumero){
     let numero = pnumero;
     let multiplicacion  = 0;
+    let resultado = "";
     for(contar=1;contar<=numero;contar++){
         multiplicacion = numero * contar;
-        console.log(numero+" x "+contar+" = "+multiplicacion);
+        resultado+=numero+" x "+contar+" = "+multiplicacion+"\n";
     }
-
+    return resultado;
 }
 /**
  * constante 
@@ -19,9 +20,11 @@ function calTabla(pnumero){
 const calTabla2=function(pnumero){
     let numero = pnumero;
     let multiplicacion  = 0;
+    let resultado = "";
     for(contar=1;contar<=numero;contar++){
         multiplicacion = numero * contar;
-        console.log(numero+" x "+contar+" = "+multiplicacion);
+        resultado+=numero+" x "+contar+" = "+multiplicacion+"\n";
     }
+    return resultado;
 
 }

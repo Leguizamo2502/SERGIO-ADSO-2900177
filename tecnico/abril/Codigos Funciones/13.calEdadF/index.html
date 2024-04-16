@@ -12,27 +12,13 @@
         let edadDos = calEdad(2001,2024);
         let edadTres = calEdad(1990,2024);
 
-        if(edadUno>=18){
-            console.log(edadUno+" Es mayor de edad:");
-        }else{
-            console.log(edadUno+" No es mayor de edad");
-        }
-        if(edadDos>=18){
-            console.log(edadDos+" Es mayor de edad");
-        }else{
-            console.log(edadDos+" No es mayor de edad");
-        }
-        if(edadTres>=18){
-            console.log(edadTres+" Es mayor de edad");
-        }else{
-            console.log(edadTres+" No es mayor de edad");
-        }
+        console.log(calMayor(edadUno));
+        console.log(calMayor(edadDos));
+        console.log(calMayor(edadTres));
+
         let promedioEdad = promedio(edadUno,edadDos,edadTres)
-        if(promedioEdad>=18){
-            console.log(promedioEdad+" El promedio de edades es mayor a 18");
-        }else{
-            console.log(promedioEdad+" El promedio de edades es menor a 18");
-        }
+        
+        console.log(calMayor(promedioEdad));
 
         console.log("Constante:");
 
@@ -40,27 +26,12 @@
         let edadDos2 = calEdad2(2003,2024);
         let edadTres2 = calEdad2(1994,2024);
 
-        if(edadUno2>=18){
-            console.log(edadUno2+" Es mayor de edad:");
-        }else{
-            console.log(edadUno2+" No es mayor de edad");
-        }
-        if(edadDos2>=18){
-            console.log(edadDos2+" Es mayor de edad");
-        }else{
-            console.log(edadDos2+" No es mayor de edad");
-        }
-        if(edadTres2>=18){
-            console.log(edadTres2+" Es mayor de edad");
-        }else{
-            console.log(edadTres2+" No es mayor de edad");
-        }
+        console.log(calMayor2(edadUno2));
+        console.log(calMayor2(edadDos2));
+        console.log(calMayor2(edadTres2));
+
         let promedioEdad2 = promedio2(edadUno2,edadDos2,edadTres2)
-        if(promedioEdad2>=18){
-            console.log(promedioEdad2+" El promedio de edades es mayor a 18");
-        }else{
-            console.log(promedioEdad2+" El promedio de edades es menor a 18");
-        }
+        console.log(calMayor2(promedioEdad2));
     </script>
 </body>
 </html>

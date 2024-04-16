@@ -4,10 +4,10 @@
  * Fecha: jueves 04 de abril de 2024
  * 
  */
-function calFactorial(pnumero,pcontador,pfactorial){
+function calFactorial(pnumero){
     let numero = pnumero;
-    let contador = pcontador;
-    let factorial = pfactorial;
+    let contador = 0;
+    let factorial = 1;
     while(contador<numero){
         contador= contador+1;
         factorial=factorial*contador;
@@ -18,10 +18,10 @@ function calFactorial(pnumero,pcontador,pfactorial){
 /**
  * constante 
  */
-const calFactorial2=function(pnumero,pcontador,pfactorial){
+const calFactorial2=function(pnumero){
     let numero = pnumero;
-    let contador = pcontador;
-    let factorial = pfactorial;
+    let contador = 0;
+    let factorial = 1;
     while(contador<numero){
         contador= contador+1;
         factorial=factorial*contador;

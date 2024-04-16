@@ -11,26 +11,27 @@ function calTabla(pnumero) {
     let tabla=0;
     let par=0;
     let impar=0;
+    let resultadoTotal = "";
     while(tabla<=numero){
         tabla=tabla+1;
         multiplicar=0;
         while(multiplicar<=numero){
             resultado=tabla*(multiplicar+1);
-            console.log(tabla+" x "+(multiplicar+1)+" = "+resultado);
+            resultadoTotal += tabla+" x "+(multiplicar+1)+" = "+resultado+"\n";
+
             if(resultado%2==0){
                 par++;
-                console.log("Buzz")
+                resultadoTotal=resultadoTotal+" Buzz"+"\n";
             }else{
                 impar++;
-                console.log("Bass")
+                resultadoTotal=resultadoTotal+" Bass"+"\n";
             }
             multiplicar++;
         }
 
     }
-    console.log(impar);
-    console.log(par);
-
+    
+    return resultadoTotal+"hay "+par+" pares"+"\n"+"hay "+impar+" impares"+"\n";
 }
 /**
  * constante 
@@ -42,24 +43,26 @@ const calTabla2=function(pnumero) {
     let tabla=0;
     let par=0;
     let impar=0;
+    let resultadoTotal = "";
     while(tabla<=numero){
         tabla=tabla+1;
         multiplicar=0;
         while(multiplicar<=numero){
             resultado=tabla*(multiplicar+1);
-            console.log(tabla+" x "+(multiplicar+1)+" = "+resultado);
+            resultadoTotal += tabla+" x "+(multiplicar+1)+" = "+resultado+"\n";
+
             if(resultado%2==0){
                 par++;
-                console.log("Buzz")
+                resultadoTotal=resultadoTotal+" Buzz"+"\n";
             }else{
                 impar++;
-                console.log("Bass")
+                resultadoTotal=resultadoTotal+" Bass"+"\n";
             }
             multiplicar++;
         }
 
     }
-    console.log(impar);
-    console.log(par);
+    
+    return resultadoTotal+"hay "+par+" pares"+"\n"+"hay "+impar+" impares"+"\n";
 
 }

@@ -10,17 +10,21 @@ function calTabla(pnumero){
     let numero = pnumero;
     let contador = 0;
     let multiplicacion = 0;
+    let resultado = "";
 
     while (contador < 5) {
         contador = contador + 1;
         multiplicacion = numero * contador;
         if(multiplicacion%2==0){
-            console.log(multiplicacion+" es par")
+            resultado+=multiplicacion+" es par"+"\n";
         }else{
-            console.log(multiplicacion+" es impar")
+            resultado+=multiplicacion+" es impar"+"\n";
         }
     }
+    return resultado;
 }
+
+
 /**
  * constante 
  */
@@ -28,14 +32,16 @@ const calTabla2=function(pnumero){
     let numero = pnumero;
     let contador = 0;
     let multiplicacion = 0;
+    let resultado = "";
 
     while (contador < 5) {
         contador = contador + 1;
         multiplicacion = numero * contador;
         if(multiplicacion%2==0){
-            console.log(multiplicacion+" es par")
+            resultado+=multiplicacion+" es par"+"\n";
         }else{
-            console.log(multiplicacion+" es impar")
+            resultado+=multiplicacion+" es impar"+"\n";
         }
     }
+    return resultado;
 }       

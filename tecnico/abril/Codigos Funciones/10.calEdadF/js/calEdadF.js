@@ -9,7 +9,11 @@ function calEdad(pfecNac, pfecAct){
     let fecNac = pfecNac;
     let fecAct = pfecAct;
     edad = fecAct - fecNac;
-    return edad;
+    if (edad >=18){
+        return edad +" Es mayor de edad";
+    }else{
+        return edad +" No es mayor de edad";
+    }
 }
 
 /**
@@ -21,5 +25,9 @@ const calEdad2 = function(pfecNac, pfecAct){
     let fecNac = pfecNac;
     let fecAct = pfecAct;
     edad = fecAct - fecNac;
-    return edad;
+    if (edad >=18){
+        return edad +" Es mayor de edad";
+    }else{
+        return edad +" No es mayor de edad";
+    }
 }

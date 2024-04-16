@@ -7,14 +7,16 @@
 function calTabla(pnumero){
     let numero = pnumero;
     let multiplicacion = 1;
+    let resultado = "";
     for(contar=1;contar<=5;contar++){
         multiplicacion = numero * contar;
         if (multiplicacion%2 == 0){
-            console.log(multiplicacion+" es par");
+            resultado+=multiplicacion+" es par"+"\n";
         }else{
-            console.log(multiplicacion+" es impar");
+            resultado+=multiplicacion+" es impar"+"\n";
         }
     }
+    return resultado;
 }
 /**
  * constante 
@@ -22,12 +24,14 @@ function calTabla(pnumero){
 const calTabla2=function(pnumero){
     let numero = pnumero;
     let multiplicacion = 1;
+    let resultado = "";
     for(contar=1;contar<=5;contar++){
         multiplicacion = numero * contar;
         if (multiplicacion%2 == 0){
-            console.log(multiplicacion+" es par");
+            resultado+=multiplicacion+" es par"+"\n";
         }else{
-            console.log(multiplicacion+" es impar");
+            resultado+=multiplicacion+" es impar"+"\n";
         }
     }
+    return resultado;
 }

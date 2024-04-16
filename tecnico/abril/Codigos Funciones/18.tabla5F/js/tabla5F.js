@@ -8,12 +8,13 @@ function calTabla(pnumero){
     let numero = pnumero;
     let contador = 0;
     let multiplicacion = 0;
-
-    while (contador < numero) {
+    let resultado="";
+    while (contador < 5) {
         contador = contador + 1;
         multiplicacion = numero * contador;
-        console.log(numero + " x " + contador + " = " + multiplicacion);
+        resultado += numero + " x " + contador + " = " + multiplicacion+"\n";
     }
+    return resultado;
 }
 
 /**
@@ -23,10 +24,11 @@ const calTabla2=function(pnumero){
     let numero = pnumero;
     let contador = 0;
     let multiplicacion = 0;
-
-    while (contador < numero) {
+    let resultado="";
+    while (contador < 5) {
         contador = contador + 1;
         multiplicacion = numero * contador;
-        console.log(numero + " x " + contador + " = " + multiplicacion);
+        resultado += numero + " x " + contador + " = " + multiplicacion+"\n";
     }
+    return resultado;
 }

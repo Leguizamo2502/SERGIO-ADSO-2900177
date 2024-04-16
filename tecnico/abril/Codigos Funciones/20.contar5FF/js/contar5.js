@@ -6,16 +6,23 @@
  */
 function contar5(pnumero){
     let numero = pnumero;
-    for(contar=1;contar<=pnumero;contar++){
-        console.log(contar);
+    let contar;
+    let resultado = "";
+    for(contar=1;contar<=numero;contar++){
+        resultado += contar+"\n";
     }
+    return resultado;
 }
+
 /**
  * constante 
  */
 const contar52=function(pnumero){
     let numero = pnumero;
-    for(contar=1;contar<=pnumero;contar++){
-        console.log(contar);
+    let contar;
+    let resultado = "";
+    for(contar=1;contar<=numero;contar++){
+        resultado += contar+"\n";
     }
+    return resultado;
 }

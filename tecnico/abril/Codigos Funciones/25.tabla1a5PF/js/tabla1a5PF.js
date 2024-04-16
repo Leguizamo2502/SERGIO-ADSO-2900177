@@ -4,52 +4,55 @@
  * Fecha: jueves 04 de abril de 2024
  * 
  */
-function calTabla(ptabla,pmultiplicar){
+function calTabla(ptabla){
     let tabla = ptabla;
-    let multiplicar = pmultiplicar;
+    let multiplicar = 5;
     let par=0;
     let impar=0;
+    let resultadoTotal = ""
     for(cTabla=1;cTabla<=tabla;cTabla++){
         for(cMult=1;cMult<=multiplicar;cMult++){
             resultado=cTabla*cMult;
+            resultadoTotal+=cTabla+" x "+cMult+" = "+resultado+"\n";
             
             if(resultado%2==0){
                 par=par+1;
-               console.log("Buzz");
+                resultadoTotal=resultadoTotal+"Buzz"+"\n";
             }else{
                 impar=impar+1;
-                console.log("Bass")
+                resultadoTotal=resultadoTotal+"Bass"+"\n";
             }
-            console.log(cTabla+" x "+cMult+" = "+resultado);
+            
         }
        }
-        console.log(par);
-        console.log(impar);
+        
+       return resultadoTotal+"hay "+par+" pares"+"\n"+"hay "+impar+" impares"+"\n";
 
 }
 /**
  * constante 
  */
-const calTabla2=function(ptabla,pmultiplicar){
+const calTabla2=function(ptabla){
     let tabla = ptabla;
-    let multiplicar = pmultiplicar;
+    let multiplicar = 5;
     let par=0;
     let impar=0;
+    let resultadoTotal = ""
     for(cTabla=1;cTabla<=tabla;cTabla++){
         for(cMult=1;cMult<=multiplicar;cMult++){
             resultado=cTabla*cMult;
+            resultadoTotal+=cTabla+" x "+cMult+" = "+resultado+"\n";
             
             if(resultado%2==0){
                 par=par+1;
-               console.log("Buzz");
+                resultadoTotal=resultadoTotal+"Buzz"+"\n";
             }else{
                 impar=impar+1;
-                console.log("Bass")
+                resultadoTotal=resultadoTotal+"Bass"+"\n";
             }
-            console.log(cTabla+" x "+cMult+" = "+resultado);
+            
         }
        }
-        console.log(par);
-        console.log(impar);
-
+        
+       return resultadoTotal+"hay "+par+" pares"+"\n"+"hay "+impar+" impares"+"\n";
 }
