@@ -12,11 +12,14 @@ function cuadrado1(plado){
 }
 
 function cuadMayor(parea1,parea2,parea3){
-    let mayor = parea1;
+    let area1 = parea1;
     let area2 = parea2;
     let area3 = parea3;
+    let mayor = area1;
     
-    if (area2 > mayor) {
+    if(area1==area2 && area1==area3 && area2==area3){
+    mayor = "Las areas son iguales";}
+    else if (area2 > mayor) {
         mayor = area2;
     }else if (area3 > mayor) {
         mayor = area3;
@@ -36,11 +39,14 @@ const cuadrado2=function(plado){
 }
 
 const cuadMayor2=function(parea1,parea2,parea3){
-    let mayor = parea1;
+    let area1 = parea1;
     let area2 = parea2;
     let area3 = parea3;
+    let mayor = area1;
     
-    if (area2 > mayor) {
+    if(area1==area2 && area1==area3 && area2==area3){
+        mayor = "Las areas son iguales";}
+        else if (area2 > mayor) {
         mayor = area2;
     }else if (area3 > mayor) {
         mayor = area3;

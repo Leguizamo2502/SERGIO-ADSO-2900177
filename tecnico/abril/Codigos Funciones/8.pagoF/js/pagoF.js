@@ -13,20 +13,20 @@ function calcularSalario(pavalorDia, pdiasTrab) {
 
 
 function calcularSalud(psalario) {
-    let salarioo = psalario;
-    let salud = salarioo * 0.12;
+    let salario = psalario;
+    let salud = salario * 0.12;
     return salud;
 }
 
 function calcularPension(psalario) {
-    let salarioo = psalario;
-    let pension = salarioo * 0.16;
+    let salario = psalario;
+    let pension = salario * 0.16;
     return pension;
 }
 
 function calcularArl(psalario) {
-    let salarioo = psalario;
-    let arl = salarioo * 0.052;
+    let salario = psalario;
+    let arl = salario * 0.052;
     return arl;
 }
 
@@ -62,18 +62,18 @@ const calcularSalario2 = function(pavalorDia, pdiasTrab) {
 }
 
 const calcularSalud2 = function(psalario) {
-    let salarioo = psalario;
-    let salud = salarioo * 0.12;
+    let salario = psalario;
+    let salud = salario * 0.12;
     return salud;
 }
 const calcularPension2 = function(psalario) {
-    let salarioo = psalario;
-    let pension = salarioo * 0.16;
+    let salario = psalario;
+    let pension = salario * 0.16;
     return pension;
 }
 const calcularArl2 = function(psalario) {
-    let salarioo = psalario;
-    let arl = salarioo * 0.052;
+    let salario = psalario;
+    let arl = salario * 0.052;
     return arl;
 }
 

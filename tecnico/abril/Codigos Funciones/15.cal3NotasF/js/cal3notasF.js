@@ -21,14 +21,14 @@ function calSumaPorcentaje(pnota1,pnota2,pnota3){
 
 function calTipo(psumaporc){
     let sumaporc = psumaporc;
-    if(psumaporc>=4.5){
-        return " Nota Superior";
-    }else if(psumaporc<4.5 && psumaporc >=3.5){
-        return " Nota buena";
-    }else if(psumaporc<3.5 && psumaporc>=3){
-        return " Nota media";
+    if(sumaporc>=4.5){
+        return psumaporc+" Nota Superior";
+    }else if(sumaporc<4.5 && sumaporc >=3.5){
+        return sumaporc+" Nota buena";
+    }else if(sumaporc<3.5 && sumaporc>=3){
+        return sumaporc+" Nota media";
     }else{
-        return " Nota baja";
+        return sumaporc+" Nota baja";
     }
     
 }
@@ -53,14 +53,14 @@ const calSumaPorcentaje2=function(pnota1,pnota2,pnota3){
 
 const calTipo2=function(psumaporc){
     let sumaporc = psumaporc;
-    if(psumaporc>=4.5){
-        return " Nota Superior";
-    }else if(psumaporc<4.5 && psumaporc >=3.5){
-        return " Nota buena";
-    }else if(psumaporc<3.5 && psumaporc>=3){
-        return " Nota media";
+    if(sumaporc>=4.5){
+        return sumaporc+" Nota Superior";
+    }else if(sumaporc<4.5 && sumaporc >=3.5){
+        return sumaporc+" Nota buena";
+    }else if(psumaporc<3.5 && sumaporc>=3){
+        return sumaporc+" Nota media";
     }else{
-        return " Nota baja";
+        return sumaporc+" Nota baja";
     }
     
 }

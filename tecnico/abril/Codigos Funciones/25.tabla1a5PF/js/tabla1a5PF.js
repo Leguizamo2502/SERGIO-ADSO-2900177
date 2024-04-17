@@ -10,8 +10,8 @@ function calTabla(ptabla){
     let par=0;
     let impar=0;
     let resultadoTotal = ""
-    for(cTabla=1;cTabla<=tabla;cTabla++){
-        for(cMult=1;cMult<=multiplicar;cMult++){
+    for(let cTabla=1;cTabla<=tabla;cTabla++){
+        for(let cMult=1;cMult<=multiplicar;cMult++){
             resultado=cTabla*cMult;
             resultadoTotal+=cTabla+" x "+cMult+" = "+resultado+"\n";
             
@@ -38,8 +38,8 @@ const calTabla2=function(ptabla){
     let par=0;
     let impar=0;
     let resultadoTotal = ""
-    for(cTabla=1;cTabla<=tabla;cTabla++){
-        for(cMult=1;cMult<=multiplicar;cMult++){
+    for(let cTabla=1;cTabla<=tabla;cTabla++){
+        for(let cMult=1;cMult<=multiplicar;cMult++){
             resultado=cTabla*cMult;
             resultadoTotal+=cTabla+" x "+cMult+" = "+resultado+"\n";
             
