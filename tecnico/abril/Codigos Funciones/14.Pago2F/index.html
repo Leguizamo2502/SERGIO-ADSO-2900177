@@ -8,52 +8,60 @@
 </head>
 <body>
     <script>
-        let salario = CalSalario(100000,10);
+        let pvDia = 50000;
+        let pdTra = 30;
+
+
+        let salario = calSalario(pvDia,pdTra);
         console.log("Salario:"+salario);
 
-        let salud = calSalud(salario);
+        let salud = calSalud(pvDia,pdTra);
         console.log("Salud:"+salud);
-        let pension = calPension(salario);
+        let pension = calPension(pvDia,pdTra);
         console.log("Pension:"+pension);
-        let arl = calArl(salario);
+        let arl = calArl(pvDia,pdTra);
         console.log("Arl:"+arl);
 
-        let descuento = calDescuento(salud,pension,arl);
+        let descuento = calDescuento(pvDia,pdTra);
         console.log("Descuento:"+descuento);
 
-        let subTransporte = calSubTransporte(salario);
+        let subTransporte = calSubTransporte(pvDia,pdTra);
         console.log("Subsidio de Transporte:"+subTransporte);
 
-        let retencion = calRetencion(salario);
+        let retencion = calRetencion(pvDia,pdTra);
         console.log("Retencion:"+retencion);
 
-        let pagoTotal = calPagoTotal(salario,subTransporte,descuento,retencion);
+        let pagoTotal = calPagoTotal(pvDia,pdTra);
         console.log("Pago Total:"+pagoTotal);
 
 
         console.log("Constante:");
 
 
-        let salario2 = CalSalario2(100000,60);
+        let pvDia2 = 300000;
+        let pdTra2 = 30;
+
+
+        let salario2 = calSalario2(pvDia2,pdTra2);
         console.log("Salario:"+salario2);
 
-        let salud2 = calSalud2(salario2);
+        let salud2 = calSalud2(pvDia2,pdTra2);
         console.log("Salud:"+salud2);
-        let pension2 = calPension2(salario2);
+        let pension2 = calPension2(pvDia2,pdTra2);
         console.log("Pension:"+pension2);
-        let arl2 = calArl2(salario2);
+        let arl2 = calArl2(pvDia2,pdTra2);
         console.log("Arl:"+arl2);
 
-        let descuento2 = calDescuento2(salud2,pension2,arl2);
+        let descuento2 = calDescuento2(pvDia2,pdTra2);
         console.log("Descuento:"+descuento2);
 
-        let subTransporte2 = calSubTransporte2(salario2);
+        let subTransporte2 = calSubTransporte2(pvDia2,pdTra2);
         console.log("Subsidio de Transporte:"+subTransporte2);
 
-        let retencion2 = calRetencion2(salario2);
+        let retencion2 = calRetencion2(pvDia2,pdTra2);
         console.log("Retencion:"+retencion2);
 
-        let pagoTotal2 = calPagoTotal2(salario2,subTransporte2,descuento2,retencion2);
+        let pagoTotal2 = calPagoTotal2(pvDia2,pdTra2);
         console.log("Pago Total:"+pagoTotal2);
 
     </script>

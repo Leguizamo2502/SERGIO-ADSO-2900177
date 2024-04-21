@@ -8,47 +8,54 @@
 </head>
 <body>
     <script>
-        let salario = calcularSalario(50000, 30);
+        let pavalorDia = 50000;
+        let pdiasTrab = 30;
+
+        let salario = calcularSalario(pavalorDia, pdiasTrab);
         console.log("Salario: "+salario); 
 
-        let Salud = calcularSalud(salario);
+        let Salud = calcularSalud(pavalorDia, pdiasTrab);
         console.log("salud: "+Salud);
 
-        let pension  = calcularPension(salario);
+        let pension  = calcularPension(pavalorDia, pdiasTrab);
         console.log("Pensión: "+pension);
 
-        let arl = calcularArl(salario);
+        let arl = calcularArl(pavalorDia, pdiasTrab);
         console.log("ARL: "+arl);
 
 
-        let descuento = calcularDescuento(Salud, pension, arl);
+        let descuento = calcularDescuento(pavalorDia, pdiasTrab);
         console.log("Descuento : "+descuento);
 
-        let  pagoTotal = calcularPago(salario, descuento);
+        let  pagoTotal = calcularPago(pavalorDia, pdiasTrab);
         console.log("Pago Total: "+pagoTotal);
 
 
         
         console.log("Constantes");
 
-        let salario2 = calcularSalario2(50000, 30);
-        console.log("Salario: "+salario2);
+        let pavalorDia2 = 100000;
+        let pdiasTrab2 = 30;
+        
+        let salario2 = calcularSalario2(pavalorDia2, pdiasTrab2);
+        console.log("Salario: "+salario2); 
 
-        let Salud2 = calcularSalud2(salario2);
+        let Salud2 = calcularSalud2(pavalorDia2, pdiasTrab2);
         console.log("salud: "+Salud2);
 
-        let pension2  = calcularPension2(salario2);
+        let pension2  = calcularPension2(pavalorDia2, pdiasTrab2);
         console.log("Pensión: "+pension2);
 
-        let arl2 = calcularArl2(salario2);
+        let arl2 = calcularArl2(pavalorDia2, pdiasTrab2);
         console.log("ARL: "+arl2);
-        let descuento2 = calcularDescuento2(Salud2, pension2, arl2);
+
+
+        let descuento2 = calcularDescuento2(pavalorDia2, pdiasTrab2);
         console.log("Descuento : "+descuento2);
 
-        let  pagoTotal2 = calcularPago2(salario2, descuento2);
+        let  pagoTotal2 = calcularPago2(pavalorDia2, pdiasTrab2);
         console.log("Pago Total: "+pagoTotal2);
-
-    
+        
 
     </script>
 </body>
