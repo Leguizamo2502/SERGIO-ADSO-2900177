@@ -39,3 +39,26 @@ for(iteracion1=0;iteracion1<5;iteracion1++){
 }
 console.log("\nI");
 console.log(letraI);
+
+//Letra N
+for(iteracion1=0;iteracion1<5;iteracion1++){
+    letraN.push(bingo[iteracion1][2]);
+}
+console.log("\nN");
+console.log(letraN);
+
+//Letra G
+for(iteracion1=0;iteracion1<5;iteracion1++){
+    letraG.push(bingo[iteracion1][3]);
+}
+console.log("\nG");
+console.log(letraG);
+//Letra O
+for(iteracion1=0;iteracion1<5;iteracion1++){
+    letraO.push(bingo[iteracion1][4]);
+}
+console.log("\nO");
+console.log(letraO);
+
+//X grande
+console.log("\nX GRANDE")
