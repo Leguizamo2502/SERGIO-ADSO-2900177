@@ -91,7 +91,7 @@ for (let iteracion1 = 0; iteracion1 < 3; iteracion1++) {
 //X2
 console.log("\nX2");
 for (let iteracion1 = 2; iteracion1 < 5; iteracion1++) {
-  for (let iteracion2 = 2; iteracion2 < 5; iteracion2++) {
+  for (let iteracion2 = 0; iteracion2 < 3; iteracion2++) {
     if (iteracion1%2==0&&iteracion2%2==0){
       console.log(bingo[iteracion1][iteracion2]);
     }else if (iteracion1%2==1&&iteracion2%2==1){
