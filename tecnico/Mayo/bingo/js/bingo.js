@@ -17,6 +17,8 @@ let letraO = [];
 let par = 0;
 let impar = 0;
 
+//Bingo
+console.log("\nBingo");
 for(iteracion1=0;iteracion1<5;iteracion1++){
     let interno=[];
     for(iteracion2=0;iteracion2<5;iteracion2++){
@@ -72,6 +74,7 @@ for(let iteracion1 = 0; iteracion1 < 5; iteracion1++) {
   }
 }
 
+//X1
 console.log("\nX1");
 for (let iteracion1 = 0; iteracion1 < 3; iteracion1++) {
   for (let iteracion2 = 1; iteracion2 < 4; iteracion2++) {
@@ -85,6 +88,7 @@ for (let iteracion1 = 0; iteracion1 < 3; iteracion1++) {
   }
 }
 
+//X2
 console.log("\nX2");
 for (let iteracion1 = 2; iteracion1 < 5; iteracion1++) {
   for (let iteracion2 = 2; iteracion2 < 5; iteracion2++) {
@@ -97,6 +101,8 @@ for (let iteracion1 = 2; iteracion1 < 5; iteracion1++) {
     }
   }
 }
+
+//X3
 console.log("\nX3");
 for (let iteracion1 = 2; iteracion1 < 5; iteracion1++) {
   for (let iteracion2 = 2; iteracion2 < 5; iteracion2++) {
@@ -110,6 +116,7 @@ for (let iteracion1 = 2; iteracion1 < 5; iteracion1++) {
   }
 }
 
+//Par o impar
 console.log("\nPar e impar");
 for (let iteracion1 = 0; iteracion1 < 5; iteracion1++) {
   for (let iteracion2 = 0; iteracion2 < 5; iteracion2++) {
@@ -120,6 +127,6 @@ for (let iteracion1 = 0; iteracion1 < 5; iteracion1++) {
     }
   }
 }
-console.log("hay " + par + " pares");
-console.log("hay " + impar + " impares");
+console.log("Hay " + par + " pares");
+console.log("Hay " + impar + " impares");
 
