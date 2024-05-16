@@ -27,14 +27,11 @@ nomina=[
     {cedula:1012234097, nombre:'Stiven', apellido:'blessd', edad:28,estrato:2,valorDia:140000,diasTrabajados:30},
     {cedula:1084684097, nombre:'Antonio', apellido:'Chala', edad:24,estrato:3,valorDia:130000,diasTrabajados:30},
     {cedula:1083898327, nombre:'Cristiano', apellido:'Ronaldo', edad:38,estrato:6,valorDia:300000,diasTrabajados:30},
-    {cedula:1083230931, nombre:'Andres', apellido:'Messi', edad:36,estrato:6,valorDia:270000,diasTrabajados:30}
+    {cedula:1083230931, nombre:'Andres', apellido:'Messi', edad:36,estrato:6,valorDia:500000,diasTrabajados:30}
 ];
 
 //FUNCIONES 
 
-/**
- * Funciones
- */
 function calSalario(pvDia,pdTra){
     let salario;
     let vDia = pvDia;
@@ -92,11 +89,12 @@ function calAbonos(pvDia,pdTra,pestrato){
 
 function calRetencion(pvDia,pdTra,pestrato){
     let retencion= 0;
+    let estrato = pestrato;
     if(calSalario(pvDia,pdTra)>(4*1300000) && calSalario(pvDia,pdTra)<(6*1300000)){
         retencion=calSalario(pvDia,pdTra)*0.03;
-    }else if((pvDia,pdTra)>(6*1300000) && calSalario(pvDia,pdTra)<(8*1300000)){
+    }else if(calSalario(pvDia,pdTra)>(6*1300000) && calSalario(pvDia,pdTra)<(8*1300000)){
         retencion=calSalario(pvDia,pdTra)*0.04;
-    }else if((pvDia,pdTra)>(8*1300000) && pestrato==6){
+    }else if((calSalario(pvDia,pdTra)>(8*1300000)) && (estrato == 6)){
         retencion=calSalario(pvDia,pdTra)*0.06;
     }else{
         retencion=0;
@@ -111,7 +109,7 @@ function calPagoTotal(pvDia,pdTra,pestrato){
     let retencion= calRetencion(pvDia,pdTra,pestrato);
     let abonos = calAbonos(pvDia,pdTra,pestrato);
     let pagoTotal;
-    pagoTotal = (salario+subTransporte)-(descuento+retencion+abonos);
+    pagoTotal = (salario+subTransporte+abonos)-(descuento+retencion);
     return pagoTotal;
 }
 
@@ -123,7 +121,7 @@ for(iteracion=0;iteracion<nomina.length;iteracion++){
     pension1 = calPension(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia);
     arl1 = calArl(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia);
     subTransporte1 = calSubTransporte(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia);
-    retencion1 = calRetencion(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia),nomina[iteracion].estrato;
+    retencion1 = calRetencion(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia, nomina[iteracion].estrato)
     abonos1 = calAbonos(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia,nomina[iteracion].estrato);
     descuento1= calDescuento(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia)
     pagoTotal1 = calPagoTotal(nomina[iteracion].diasTrabajados, nomina[iteracion].valorDia, nomina[iteracion].estrato)
