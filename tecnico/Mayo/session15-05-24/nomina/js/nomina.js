@@ -3,32 +3,8 @@
  * Nomina
  * 15-05-24
  */
-let nomina = [];
-let iteracion;
-let pagoNomina=[];
-let salario1;
-let salud1;
-let pension1;
-let arl1;
-let subTransporte1;
-let retencion1;
-let abonos1;
-let descuento1;
-let pagoTotal1;
 
 
-nomina=[
-    {cedula:1083234097, nombre:'Andres', apellido:'Moreno', edad:44,estrato:2, valorDia:10000,diasTrabajados:30},
-    {cedula:1083236297, nombre:'Mauricio', apellido:'Noscue', edad:18,estrato:2,valorDia:90000,diasTrabajados:30},
-    {cedula:1109234097, nombre:'Jorge', apellido:'Baron', edad:20,estrato:1,valorDia:160000,diasTrabajados:30},
-    {cedula:1083233593, nombre:'Brayan', apellido:'Casas', edad:25,estrato:3,valorDia:150000,diasTrabajados:30},
-    {cedula:1083200997, nombre:'Gerardo', apellido:'Cerquera', edad:35,estrato:4,valorDia:110000,diasTrabajados:30},
-    {cedula:1087239997, nombre:'Samuel', apellido:'Cortez', edad:27,estrato:2,valorDia:220000,diasTrabajados:30},
-    {cedula:1012234097, nombre:'Stiven', apellido:'blessd', edad:28,estrato:2,valorDia:140000,diasTrabajados:30},
-    {cedula:1084684097, nombre:'Antonio', apellido:'Chala', edad:24,estrato:3,valorDia:130000,diasTrabajados:30},
-    {cedula:1083898327, nombre:'Cristiano', apellido:'Ronaldo', edad:38,estrato:6,valorDia:300000,diasTrabajados:30},
-    {cedula:1083230931, nombre:'Andres', apellido:'Messi', edad:36,estrato:6,valorDia:500000,diasTrabajados:30}
-];
 
 //FUNCIONES 
 
@@ -113,6 +89,32 @@ function calPagoTotal(pvDia,pdTra,pestrato){
     return pagoTotal;
 }
 
+//Codigo
+let nomina = [];
+let iteracion;
+let pagoNomina=[];
+let salario1;
+let salud1;
+let pension1;
+let arl1;
+let subTransporte1;
+let retencion1;
+let abonos1;
+let descuento1;
+let pagoTotal1;
+
+nomina=[
+    {cedula:1083234097, nombre:'Andres', apellido:'Moreno', edad:44,estrato:2, valorDia:10000,diasTrabajados:30},
+    {cedula:1083236297, nombre:'Mauricio', apellido:'Noscue', edad:18,estrato:2,valorDia:90000,diasTrabajados:30},
+    {cedula:1109234097, nombre:'Jorge', apellido:'Baron', edad:20,estrato:1,valorDia:160000,diasTrabajados:30},
+    {cedula:1083233593, nombre:'Brayan', apellido:'Casas', edad:25,estrato:3,valorDia:150000,diasTrabajados:30},
+    {cedula:1083200997, nombre:'Gerardo', apellido:'Cerquera', edad:35,estrato:4,valorDia:110000,diasTrabajados:30},
+    {cedula:1087239997, nombre:'Samuel', apellido:'Cortez', edad:27,estrato:2,valorDia:220000,diasTrabajados:30},
+    {cedula:1012234097, nombre:'Stiven', apellido:'blessd', edad:28,estrato:2,valorDia:140000,diasTrabajados:30},
+    {cedula:1084684097, nombre:'Antonio', apellido:'Chala', edad:24,estrato:3,valorDia:130000,diasTrabajados:30},
+    {cedula:1083898327, nombre:'Cristiano', apellido:'Ronaldo', edad:38,estrato:6,valorDia:300000,diasTrabajados:30},
+    {cedula:1083230931, nombre:'Andres', apellido:'Messi', edad:36,estrato:6,valorDia:500000,diasTrabajados:30}
+];
 
 
 for(iteracion=0;iteracion<nomina.length;iteracion++){
