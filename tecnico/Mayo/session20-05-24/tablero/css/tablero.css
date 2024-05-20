@@ -1,0 +1,38 @@
+/*
+Estilo
+Sergio Leguizamo
+20 -05-24
+*/
+#principal{
+    float: left;
+    width: 590px;
+    border: 1px solid #000;
+    margin-top: 50px;
+    padding: 10px 0 0 20px;
+
+}
+
+.row{
+    float: left;
+    display: flexbox;
+    flex-wrap: nowrap;
+    height: 200px;
+    /* border: 1px solid #6e0808;*/
+    margin-bottom: 5px;
+
+}
+.celda{
+    border: 1px solid #045518;
+}
+.espacio-deiz{
+    margin: 0 4px 0 4px;
+}
+.espacio-iz{
+    margin-left: 6px;
+}
+.letra-blanca{
+    color: #fff;
+}
+.fondo-azul-oscuro{
+    background-color: #0f065f;
+}

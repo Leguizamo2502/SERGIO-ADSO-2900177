@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/tablero.css">
+</head>
+<body>
+    <div class="container">
+        <div id="principal" class="col-12">
+            <div class="row col-12">
+                <div class="col-4 celda fondo-azul-oscuro letra-blanca" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Primer Cuadro 
+                    <br>
+                    Abril modal
+                </div>
+                <div class="col-4 celda espacio-deiz"></div>
+                <div class="col-4 celda"></div>
+            </div>
+            <div class="row col-12">
+                <div class="col-8 celda"></div>
+                <div class="col-4 celda espacio-iz"></div>
+            </div>
+            <div class="row col-12">
+                <div class="col-6 celda"></div>
+                <div class="col-6 celda espacio-iz"></div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Primer elemento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Descripcion elemento
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
