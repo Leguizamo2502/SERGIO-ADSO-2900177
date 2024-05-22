@@ -1,1 +1,98 @@
+.cell {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+   
+}
 
+
+.cell2 {
+    border: 1px solid opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+    
+}
+.row{
+   
+    display: flexbox;
+    flex-wrap: wrap;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+.container{
+    
+    width: 2000px;
+    border: 2px solid #000;
+    margin-top:  30px;
+    padding: 10px 20px 1px 20px;
+
+}
+
+
+
+.espacio-deiz{
+    margin: 0 4px 0 4px;
+}
+.espacio-iz{
+    margin-left: 6px;
+}
+
+
+.letra-negra{
+    color: #222222;
+    font-weight:bold;
+}
+
+.letra-roja{
+    color: #e21d1d;
+    font-weight: bold;
+}
+.letra-blanca{
+    color: #fff;
+    font-weight: bold;
+}
+
+.color-verde{
+    background-color: #6bc96e;
+    transition: background-color 0.3s;
+}
+
+
+.color-naranja{
+    background-color: #fa7b49;
+    transition: background-color 0.3s;
+}
+
+.color-azul{
+    background-color: #71e2ec;
+    transition: background-color 0.3s;
+}
+
+.color-morado{
+    background-color: #ea9eed;
+    transition: background-color 0.3s;
+}
+
+.color-verdoso{
+    background-color: #7eec9f;
+    transition: background-color 0.3s;
+}
+.color-blanco{
+    background-color: #dbdbdb;
+    transition: background-color 0.3s;
+}
+.color-rosa{
+    background-color: #f13cdc;
+    transition: background-color 0.3s;
+}
+.color-rosita{
+    background-color: #f9cbfa;
+    transition: background-color 0.3s;
+}
