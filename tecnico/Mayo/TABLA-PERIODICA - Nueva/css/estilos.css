@@ -1,69 +1,63 @@
-.cell {
-    border: 1px solid #000;
+/*
+    Tabla
+*/
+
+.periodo{
+    float: left;
+    width: 1200px;
+    height: 60px;
+}
+
+.elemento{
+    float: left;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px; 
-   
+    flex-wrap:nowrap;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
 }
 
-
-.cell2 {
-    border: 1px solid opacity;
+.elemento-inv{
+    float: left;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px; 
-    
-}
-.row{
-   
-    display:flexbox;
-    flex-wrap: wrap;
-    height: 40px;
-    margin-bottom: 10px;
+    flex-wrap:nowrap;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    opacity: 0;
 }
 
 
-
-.container{
-    
-    width: 2000px;
-    border: 2px solid #000;
-    margin-top:  10px;
-    padding: 10px 20px 1px 20px;
-
-}
-
-
-
-.espacio-deiz{
-    margin: 0 4px 0 4px;
-}
-.espacio-iz{
-    margin-left: 6px;
-}
-
+/*
+    Color Letra
+*/
 
 .letra-negra{
     color: #222222;
-    font-weight:bold;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 .letra-roja{
     color: #e21d1d;
     font-weight: bold;
+    font-size: 10px;
 }
 .letra-blanca{
     color: #fff;
     font-weight: bold;
+    font-size: 10px;
 }
 
 .letra-morada{
     color: #56008f;
     font-weight: bold;
+    font-size: 10px;
 }
 
+
+/*
+    Colores
+*/
 .color-verde{
     background-color: #6bc96e;
     transition: background-color 0.3s;
@@ -81,12 +75,12 @@
 }
 
 .color-morado{
-    background-color: #ea9eed;
+    background-color: #ce75d1;
     transition: background-color 0.3s;
 }
 
 .color-verdoso{
-    background-color: #7eec9f;
+    background-color: #1cff60;
     transition: background-color 0.3s;
 }
 .color-blanco{
@@ -98,6 +92,6 @@
     transition: background-color 0.3s;
 }
 .color-rosita{
-    background-color: #f9cbfa;
+    background-color: #ffa1ff;
     transition: background-color 0.3s;
 }
