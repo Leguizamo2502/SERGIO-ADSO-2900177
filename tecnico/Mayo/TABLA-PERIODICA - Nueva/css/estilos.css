@@ -26,6 +26,37 @@
     opacity: 0;
 }
 
+/*
+Description
+*/
+
+.simbolo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; 
+    
+    
+    
+}
+
+
+.nombre {
+   
+    text-align: center;
+    width: 60px;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.numero {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+   
+    
+}
+
 
 /*
     Color Letra
