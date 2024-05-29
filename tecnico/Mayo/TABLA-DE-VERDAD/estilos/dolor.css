@@ -24,9 +24,10 @@
 .titulo{
     font-size: 30px;
     font-weight: bold;
-    color: #222222;
+    color: #ff17f0;
     transition: transform 0.3s; 
     cursor: pointer;
+    
 }
 
 .principal{
@@ -85,7 +86,7 @@
 }
 
 .borde-big{
-    border: 5px solid #ffe4c4;
+    border: 5px solid #ffffff;
     padding: 0px 0px ;
     margin: 0px 0px ;
     height: 60px;
@@ -95,7 +96,7 @@
     
 }
 .borde-big-der{
-    border: 5px solid #ffe4c4;
+    border: 5px solid #ffffff;
     padding: 0px 0px ;
     margin: 0px 0px ;
     height: 60px;

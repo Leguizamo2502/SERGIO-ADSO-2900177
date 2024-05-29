@@ -5,23 +5,14 @@
 */
 .container{
     margin-left: 200px;
-    margin-top: 100px;
-}
-.img3{
-    position: absolute;
-    margin: 0px 0px 0px 0px;
-    width: 1px; 
-    height: 1px;
-    
 }
 .img{
     position: absolute;
     margin: 0px 0px 0px 0px;
     width: 50px; 
     height: 40px; 
-
 }
-.img-img3-container{
+.img-container{
     position: relative;
 }
 .img2{
@@ -50,13 +41,13 @@
 }
 
 .elemento{
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     padding: 0px 0px ;
     margin: 0px 0px ;
     height: 60px;
     float:left;
     transition: transform 0.3s; 
-    cursor: pointer; 
+    cursor: pointer;
     
     
 }
@@ -64,7 +55,7 @@
     padding: 0px 0px;
     margin: 0px 0px ;
     height: 60px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     float: right;
     transition: transform 0.3s; 
     cursor: pointer;
