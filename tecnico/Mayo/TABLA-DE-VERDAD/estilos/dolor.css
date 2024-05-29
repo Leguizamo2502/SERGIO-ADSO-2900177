@@ -1,0 +1,157 @@
+/*Sergio Leguizamo
+}*/
+
+
+.container{
+    margin-left: 200px;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #222222;
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+
+.principal{
+    width: 1100px;
+}
+.tr2:hover{
+    transform: scale(1.2);
+}
+.tr:hover {
+
+    transform: scale(2.2);
+}
+
+.elemento{
+    border: 1px solid #000;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:left;
+    transition: transform 0.3s; 
+    cursor: pointer;
+    
+    
+}
+.elemento-der{
+    padding: 0px 0px;
+    margin: 0px 0px ;
+    height: 60px;
+    border: 1px solid #000;
+    float: right;
+    transition: transform 0.3s; 
+    cursor: pointer;
+    
+}
+.fila{
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    
+}
+.separacion{
+    margin-top: 30px;
+}
+
+.borde-inv{
+    border: transparent;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    
+}
+.fuera{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.borde-big{
+    border: 5px solid #ffe4c4;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:left;
+    margin-bottom: 30px;
+    
+    
+}
+.borde-big-der{
+    border: 5px solid #ffe4c4;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:right;
+    margin-bottom: 30px;
+    
+    
+}
+/*
+descripcion
+*/
+.numero{
+    font-size: 10px;
+    float: left;
+    font-weight: bold;
+    margin-right: -10px;
+}
+
+.simbolo{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.masa{
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.nombre{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+.nombre-color{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+/*
+Colores
+*/
+.verdito{
+    background-color:#9ed39d ;
+}
+.rojo{
+    background-color: #e1236d;
+}
+.naranja{
+    background-color: #fcaf21;
+}
+.amarillo1{
+    background-color: #fbd741;
+}
+.amarillo2{
+    background-color: #f2ed53;
+}
+.azul{
+    background-color: #69b9ea;
+}
+.cian{
+    background-color: #43c4bf;
+}
+.gris{
+    background-color: #a1b7de;
+}
+.rosa1{
+    background-color: #a16790;
+}
+.rosa2{
+    background-color: #d82c92;
+}
