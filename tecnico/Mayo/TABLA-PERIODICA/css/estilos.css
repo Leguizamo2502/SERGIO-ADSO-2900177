@@ -1,103 +1,182 @@
-.cell {
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px; 
-   
-}
+/*Sergio Leguizamo
+}*/
 
-
-.cell2 {
-    border: 1px solid opacity;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px; 
-    
-}
-.row{
-   
-    display:flexbox;
-    flex-wrap: wrap;
-    height: 40px;
-    margin-bottom: 10px;
-}
-
-
-
+/*TABLA
+*/
 .container{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.img3{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    width: 1px; 
+    height: 1px;
     
-    width: 2000px;
-    border: 2px solid #000;
-    margin-top:  10px;
-    padding: 10px 20px 1px 20px;
+}
+.img{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    width: 50px; 
+    height: 40px; 
 
 }
-
-
-
-.espacio-deiz{
-    margin: 0 4px 0 4px;
+.img-img3-container{
+    position: relative;
 }
-.espacio-iz{
-    margin-left: 6px;
+.img2{
+    position: absolute;
+    margin: 0px 0px 0px -48px;
+    width: 50px; 
+    height: 40px;
 }
-
-
-.letra-negra{
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
     color: #222222;
-    font-weight:bold;
+    transition: transform 0.3s; 
+    cursor: pointer;
 }
 
-.letra-roja{
-    color: #e21d1d;
+.principal{
+    width: 1100px;
+}
+.tr2:hover{
+    transform: scale(1.2);
+}
+.tr:hover {
+
+    transform: scale(2.2);
+}
+
+.elemento{
+    border: 1px solid #000000;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:left;
+    transition: transform 0.3s; 
+    cursor: pointer; 
+    
+    
+}
+.elemento-der{
+    padding: 0px 0px;
+    margin: 0px 0px ;
+    height: 60px;
+    border: 1px solid #000000;
+    float: right;
+    transition: transform 0.3s; 
+    cursor: pointer;
+    
+}
+.fila{
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    
+}
+.separacion{
+    margin-top: 30px;
+}
+
+.borde-inv{
+    border: transparent;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    
+}
+.fuera{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.borde-big{
+    border: 5px solid #ffe4c4;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:left;
+    margin-bottom: 30px;
+    
+    
+}
+.borde-big-der{
+    border: 5px solid #ffe4c4;
+    padding: 0px 0px ;
+    margin: 0px 0px ;
+    height: 60px;
+    float:right;
+    margin-bottom: 30px;
+    
+    
+}
+/*
+descripcion
+*/
+.numero{
+    font-size: 10px;
+    float: left;
+    font-weight: bold;
+    margin-right: -10px;
+}
+
+.simbolo{
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
 }
-.letra-blanca{
-    color: #fff;
+
+.masa{
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.nombre{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.nombre-color{
+    font-size: 10px;
+    text-align: center;
     font-weight: bold;
 }
-
-.letra-morada{
-    color: #56008f;
-    font-weight: bold;
+/*
+Colores
+*/
+.verdito{
+    background-color:#9ed39d ;
 }
-
-.color-verde{
-    background-color: #6bc96e;
-    transition: background-color 0.3s;
+.rojo{
+    background-color: #e1236d;
 }
-
-
-.color-naranja{
-    background-color: #fa7b49;
-    transition: background-color 0.3s;
+.naranja{
+    background-color: #fcaf21;
 }
-
-.color-azul{
-    background-color: #71e2ec;
-    transition: background-color 0.3s;
+.amarillo1{
+    background-color: #fbd741;
 }
-
-.color-morado{
-    background-color: #ea9eed;
-    transition: background-color 0.3s;
+.amarillo2{
+    background-color: #f2ed53;
 }
-
-.color-verdoso{
-    background-color: #7eec9f;
-    transition: background-color 0.3s;
+.azul{
+    background-color: #69b9ea;
 }
-.color-blanco{
-    background-color: #dbdbdb;
-    transition: background-color 0.3s;
+.cian{
+    background-color: #43c4bf;
 }
-.color-rosa{
-    background-color: #f13cdc;
-    transition: background-color 0.3s;
+.gris{
+    background-color: #a1b7de;
 }
-.color-rosita{
-    background-color: #f9cbfa;
-    transition: background-color 0.3s;
+.rosa1{
+    background-color: #a16790;
+}
+.rosa2{
+    background-color: #d82c92;
 }
