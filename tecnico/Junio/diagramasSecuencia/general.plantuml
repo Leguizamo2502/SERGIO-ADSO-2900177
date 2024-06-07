@@ -1,0 +1,37 @@
+@startuml general
+actor Jugador
+participant "Interfaz de Inicio" as InterfazInicio
+participant "Sistema de Autenticación" as Autenticacion
+participant "Sistema de Opciones de Juego" as OpcionesJuego
+participant "Sistema de Niveles de Juego" as NivelesJuego
+participant "Sistema de Puntuación" as Puntuacion
+
+Jugador -> InterfazInicio: Iniciar proceso
+InterfazInicio -> Jugador: Mostrar interfaz de inicio
+Jugador -> Autenticacion: Login
+Autenticacion -> Jugador: Verificar credenciales
+Jugador -> OpcionesJuego: Seleccionar opción de jugador
+OpcionesJuego -> Jugador: Mostrar opciones de juego
+Jugador -> NivelesJuego: Seleccionar nivel de dificultad
+alt Nivel fácil
+    Jugador -> NivelesJuego: Seleccionar nivel fácil
+    NivelesJuego -> Jugador: Iniciar juego nivel fácil
+else Nivel medio
+    Jugador -> NivelesJuego: Seleccionar nivel medio
+    NivelesJuego -> Jugador: Iniciar juego nivel medio
+else Nivel difícil
+    Jugador -> NivelesJuego: Seleccionar nivel difícil
+    NivelesJuego -> Jugador: Iniciar juego nivel difícil
+end
+NivelesJuego -> Puntuacion: Finalizar nivel y mostrar puntuación
+Puntuacion -> Jugador: Mostrar tabla de puntuación
+Puntuacion -> Jugador: ¿Continuar jugando?
+alt Continuar
+    Jugador -> InterfazInicio: Sí
+    InterfazInicio -> Jugador: Reiniciar proceso (Mostrar interfaz de inicio)
+else No continuar
+    Jugador -> InterfazInicio: No
+    InterfazInicio -> Jugador: Fin del juego (Interfaz inicio)
+end
+@enduml
+

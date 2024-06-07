@@ -1,0 +1,21 @@
+@startuml Interfaz
+actor Usuario
+participant "Interfaz de usuario" as UI
+participant "Controlador de Niveles de Dificultad" as CND
+participant "Servicio de Niveles de dificultad" as SND
+
+Usuario -> UI: Solicitar Niveles de Dificultad Disponibles
+UI -> CND: Solicitar lista de Niveles de Dificultad
+CND -> SND: Obtener lista de Niveles de Dificultad
+SND -> CND: Enviar lista de Niveles de Dificultad
+UI -> Usuario: Mostrar lista de Niveles de Dificultad
+
+Usuario -> UI: Seleccionar Nivel de Dificultad
+UI -> CND: Enviar Seleccion de Nivel de Dificultad
+CND -> SND: Configurar Nivel de Dificultad Seleccionado
+SND -> CND: Confirmacion de Configuracion
+CND-> UI: Enviar Confirmacion de Configuracion
+UI -> Usuario: Notificar Configuracion Exitosa
+
+
+@enduml

@@ -1,0 +1,37 @@
+@startuml opcJugador
+actor Usuario
+participant "Sistema de Juego" as GameSystem
+participant "Servicio Multijugador" as MultiplayerService
+
+Usuario -> GameSystem: Iniciar
+GameSystem -> Usuario: Mostrar opciones de juego
+
+alt Seleccionar Modo Individual
+    Usuario -> GameSystem: Seleccionar Modo Individual
+    GameSystem -> Usuario: Mostrar opción de juego individual
+    Usuario -> GameSystem: Seleccionar opción de juego individual
+    GameSystem -> Usuario: Iniciar juego individual
+else Seleccionar Modo Multijugador
+    Usuario -> GameSystem: Seleccionar Modo Multijugador
+    GameSystem -> Usuario: Mostrar opciones de multijugador
+    
+    alt Crear sala
+        Usuario -> GameSystem: Crear sala
+        GameSystem -> MultiplayerService: Crear sala
+        MultiplayerService -> GameSystem: Código de sala generado
+        GameSystem -> Usuario: Mostrar código de juego
+        Usuario -> GameSystem: Iniciar juego en modo administrador
+    else Unirse mediante un código
+        Usuario -> GameSystem: Introducir código de juego
+        GameSystem -> MultiplayerService: Validar código
+        MultiplayerService --> GameSystem: Código validado
+        alt Código correcto
+            GameSystem -> Usuario: Código correcto
+            Usuario -> GameSystem: Usar Modo Invitado
+            GameSystem -> Usuario: Iniciar juego en modo invitado
+        else Código incorrecto
+            GameSystem -> Usuario: Código incorrecto, intenta de nuevo
+        end
+    end
+end
+@enduml

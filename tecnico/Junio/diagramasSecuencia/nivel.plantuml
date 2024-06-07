@@ -1,0 +1,20 @@
+@startuml nivel
+actor Usuario
+participant "Sistema de Juego" as GameSystem
+participant "Servicio de Administrador" as AdminService
+
+Usuario -> GameSystem: Iniciar
+GameSystem -> Usuario: Mostrar opciones de nivel
+
+alt Seleccionar nivel fácil, medio o difícil
+    Usuario -> GameSystem: Elegir nivel
+    alt Modo administrador
+        Usuario -> GameSystem: Elegir Modo administrador
+        GameSystem -> AdminService: Generar Código
+        AdminService -> GameSystem: Código generado
+        Usuario -> GameSystem: Iniciar juego
+    else Modo jugador
+        Usuario -> GameSystem: Iniciar juego
+    end
+end
+@enduml

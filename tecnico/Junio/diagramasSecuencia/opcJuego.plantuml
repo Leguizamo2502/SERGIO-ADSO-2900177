@@ -1,0 +1,14 @@
+@startuml opcJuego
+actor Usuario
+participant "Sistema de Juego" as GameSystem
+
+Usuario -> GameSystem: Iniciar
+GameSystem -> Usuario: Mostrar opciones de juego
+
+alt Seleccionar una opción de juego
+    Usuario -> GameSystem: Elegir opción
+    GameSystem -> Usuario: Mostrar interfaz correspondiente
+    Usuario -> GameSystem: Seleccionar nivel
+    GameSystem -> Usuario: Iniciar juego correspondiente
+end
+@enduml

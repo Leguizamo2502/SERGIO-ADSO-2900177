@@ -1,0 +1,38 @@
+@startuml login
+actor Usuario
+participant "Sistema de Autenticación" as Sistema
+participant "Servicio de Registro" as Registro
+participant "Servicio de Recuperación" as Recuperacion
+
+Usuario -> Sistema: Iniciar proceso de login
+alt ¿Tienes cuenta?
+    Usuario -> Sistema: No
+    Sistema -> Registro: Registrarse
+    Usuario -> Registro: Proporcionar datos
+    Registro -> Registro: Verificar datos
+    alt Registro exitoso
+        Registro -> Usuario: Registro exitoso
+        Usuario -> Sistema: Iniciar sesión
+        Sistema -> Sistema: Validar datos
+        alt Datos correctos
+            Sistema -> Usuario: Login exitoso
+        else Datos incorrectos
+            Sistema -> Usuario: Mostrar mensaje de error
+        end
+    else Registro fallido
+        Registro -> Usuario: Mostrar mensaje de error
+    end
+else Sí
+    Usuario -> Sistema: Iniciar sesión
+    Sistema -> Sistema: Validar datos
+    alt Datos correctos
+        Sistema -> Usuario: Login exitoso
+    else Datos incorrectos
+        Sistema -> Usuario: Mostrar mensaje de error
+    end
+    opt ¿Olvidaste contraseña?
+        Usuario -> Recuperacion: Recuperar contraseña
+        Recuperacion -> Usuario: Enviar instrucciones de recuperación
+    end
+end
+@enduml
