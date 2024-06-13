@@ -5,7 +5,7 @@ participant "Sistema de Juego" as GameSystem
 Usuario -> GameSystem: Iniciar
 GameSystem -> Usuario: Mostrar opciones de juego
 
-alt Seleccionar una opción de juego
+alt Seleccionar una opción de juego (Matematicas, Tecnologia, Animales, Comida)
     Usuario -> GameSystem: Elegir opción
     GameSystem -> Usuario: Mostrar interfaz correspondiente
     Usuario -> GameSystem: Seleccionar nivel
