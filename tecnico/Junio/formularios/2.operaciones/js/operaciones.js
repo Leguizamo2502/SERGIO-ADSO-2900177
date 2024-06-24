@@ -11,10 +11,10 @@ function operaciones (){
     multiplicar= num1*num2;
     dividir= num1/num2;
 
-    rsuma = `Suma: ${sumar} <br>`;
-    rresta = `Resta: ${restar} <br>`;
-    rmultiplicar = `Multiplicación: ${multiplicar} <br>`;
-    rdividir = `División: ${dividir} <br>`
+    let rsuma = `Suma: ${sumar} <br>`;
+    let rresta = `Resta: ${restar} <br>`;
+    let rmultiplicar = `Multiplicación: ${multiplicar} <br>`;
+    let rdividir = `División: ${dividir} <br>`
 
     document.getElementById('operaciones').innerHTML = rsuma + rresta + rmultiplicar + rdividir;
 
