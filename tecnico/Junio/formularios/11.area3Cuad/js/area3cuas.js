@@ -27,15 +27,14 @@ function cuadMayor(parea1,parea2,parea3){
     let area1 = parea1;
     let area2 = parea2;
     let area3 = parea3;
-    let mayor = `El area del cuadrado uno es mayor: ${area1}`;
     
-    if(area1==area2 && area2==area3){
-        mayor = "Las areas son iguales";}
-    else if (area2 > mayor) {
-        mayor = "El area del cuadrado dos es mayor: " + area2;
-    }else if (area3 > mayor) {
-        mayor = "El area del cuadrado tres es mayor: " + area3 ;
+    if (area1 === area2 && area2 === area3) {
+        return "Todos los números son iguales.";
+    } else if (area1 >= area2 && area1 >= area3) {
+        return `El area mayor es del cuadrado uno ${area1}.`;
+    } else if (area2 >= area1 && area2 >= area3) {
+        return `El area mayor es del cuadrado dos ${area2}.`;
+    } else {
+        return `El area mayor es del cuadrado tres ${area3}.`;
     }
-    return mayor;
-
 }
