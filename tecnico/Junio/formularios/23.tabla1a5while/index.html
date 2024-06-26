@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    
+
+    <title>Tabla 1 a 5 while</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="col-10 row forma">
+            <div class="formulario col-6">
+                <!--Inicio formulario-->
+                <form class="row g-3 needs-validation" novalidate onsubmit="return operaciones()">
+                  <div class="col-md-12">
+                    <label for="txtNumeroUno" class="form-label">Numero Uno</label>
+                    <input type="number" class="form-control" id='txtNumeroUno' required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                  </div>
+                    
+                 
+
+                  <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Calcular <i class="fa-solid fa-heart"></i></button>
+                      
+                  </div>
+                </form>
+                <!--Fin fotmulario-->
+            </div>
+            <div class="respuesta col-4">
+                <div id='operaciones'></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/tabla1a3w.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

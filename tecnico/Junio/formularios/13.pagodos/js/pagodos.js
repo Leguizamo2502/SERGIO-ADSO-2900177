@@ -8,10 +8,21 @@ function operaciones (){
     let arl = calArl(pagoDia, diasTrabajados);
     let descuento = calDescuento(pagoDia, diasTrabajados);
     let subTransporte = calSubTransporte(pagoDia, diasTrabajados);
+    let retencion = calRetencion(pagoDia, diasTrabajados);
+    let pagoTotal = calPagoTotal(pagoDia, diasTrabajados);
 
-    let rdividir = `División: ${dividir} <br>`
+    let rsalario = `Salario: ${salario} <br>`;
+    let rsalud = `Salud: ${salud} <br>`;
+    let rpension = `Pension: ${pension} <br>`;
+    let rarl = `Arl: ${arl} <br>`;
+    let rdescuento = `Descuento: ${descuento} <br>`;
+    let rsubTransporte = `SubTransporte: ${subTransporte} <br>`;
+    let rretencion = `Retencion: ${retencion} <br>`;
+    let rpagoTotal = `Pago total: ${pagoTotal} <br>`;
 
-    document.getElementById('operaciones').innerHTML = rsuma + rresta + rmultiplicar + rdividir;
+
+
+    document.getElementById('operaciones').innerHTML = rsalario + rsalud + rpension + rarl + rdescuento + rsubTransporte + rretencion + rpagoTotal
 
     return false;
 }
