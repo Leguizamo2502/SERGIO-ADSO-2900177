@@ -1,0 +1,37 @@
+.container{
+    float:inherit;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+    .table{
+        width: 300px;
+        margin: 5px;
+    }
+    
+    .tabla-color{
+        background-color: aqua;
+    }
+    .color-letra{
+        background-color: bisque;
+    }
+
+    
+    .borde{
+        border: 1px solid #000000;
+    }
+     
+    .color-1{
+        background-color: #ff0000;
+    }
+    .color-2{
+        background-color: #f7ff83;
+    }
+    .color-3{
+        background-color: #ff7fe1;
+    }
+}
+

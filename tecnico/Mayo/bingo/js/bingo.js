@@ -66,8 +66,8 @@ console.log(letraO);
 
 //X grande
 console.log("\nX GRANDE")
-for(let iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-  for(let iteracion2 = 0; iteracion2 < 5; iteracion2++) {
+for(iteracion1 = 0; iteracion1 < 5; iteracion1++) {
+  for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
       if(iteracion1 == iteracion2 || iteracion1 + iteracion2 == 4) {
           console.log(bingo[iteracion1][iteracion2]);
       }
