@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log(bingo);
 
     //Bingo simple
+   
+    
     printResultado+='<table class="table"><tr>';
     for (let contadorB = 0; contadorB < letras.length; contadorB++) {
         printResultado+= '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
@@ -34,13 +36,14 @@ document.addEventListener('DOMContentLoaded', function(){
     printResultado+='</tr>';
     for(iteracion1 = 0; iteracion1 < 5; iteracion1++) {
         printResultado+='<tr>'
-        for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-            printResultado+='<td class="borde">'+bingo[iteracion1][iteracion2]+'</td>';
-        }
-      printResultado+='</tr>';
+    for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
+        printResultado+='<td class="borde tabla-color">'+bingo[iteracion1][iteracion2]+'</td>';
     }
-  printResultado+='</table>';
-
+    printResultado+='</tr>';
+    }
+    printResultado+='</table>';
+          
+    
     
    //Bingo-letras
    for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
@@ -51,17 +54,17 @@ document.addEventListener('DOMContentLoaded', function(){
             printResultado += '<th class ="borde color-letra">' + letras[contadorB] + '</th>';
         };
         printResultado += '</tr>';
-            for (let contador = 0; contador < 5; contador++) {
-                printResultado += '<tr>';
-                    for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-                        if (iteracion2 == iteracion1) {
-                            printResultado += '<td class ="borde color-1"><strong>' + bingo[contador][iteracion2] + '</strong></td>';
-                        } else {
-                            printResultado += '<td class ="borde">' + bingo[contador][iteracion2] + '</td>';
-                        };
-                    };
-                printResultado += '</tr>';
+        for (let contador = 0; contador < 5; contador++) {
+            printResultado += '<tr>';
+            for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
+                if (iteracion2 == iteracion1) {
+                    printResultado += '<td class ="borde tabla-color color-l">' + bingo[contador][iteracion2] + '</td>';
+                } else {
+                    printResultado += '<td class ="borde tabla-color">' + bingo[contador][iteracion2] + '</td>';
+                };
             };
+            printResultado += '</tr>';
+        };
 
     printResultado += '</table>';
     };
@@ -69,60 +72,60 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   //X grande
-  printResultado+='<table class="table"><tr>';
-  for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-      printResultado+= '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
-  };
-  printResultado+='</tr>';
-  for(iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-      printResultado+='<tr>'
-      for(iteracion2 = 0; iteracion2 < 5; iteracion2++) {
-          if(iteracion1 == iteracion2 || iteracion1 + iteracion2 == 4) {
-             printResultado+='<td class="borde color-1">'+bingo[iteracion1][iteracion2]+'</td>';
+  printResultado += '<table class="table"><tr>';
+  for(contadorB=0;contadorB<5;contadorB++){
+      printResultado += '<th scope="col" class ="color-letra borde">'+letras[contadorB]+'</th>';
+  }
+  printResultado += '</tr>';
+  for(iteracion1=0;iteracion1<5;iteracion1++){
+      printResultado += '<tr>';
+      for(iteracion2=0;iteracion2<5;iteracion2++){
+          if(iteracion1==iteracion2 || iteracion1+iteracion2==4){
+              printResultado += '<td class="borde tabla-color color-x grande">'+bingo[iteracion1][iteracion2]+'</td>';
           }else{
-              printResultado+='<td class="borde">'+bingo[iteracion1][iteracion2]+'</td>';
+              printResultado += '<td class="borde tabla-color">'+bingo[iteracion1][iteracion2]+'</td>';
           }
       }
-      printResultado+='</tr>';
+      printResultado += '</tr>';
+  }    
+  printResultado += '</table>';
+
+
+    //X varias
+
+    printResultado += '<table class="table"><tr>';
+    for (let contadorB = 0; contadorB < letras.length; contadorB++) {
+        printResultado += '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
     }
-  printResultado+='</table>';
-
-
-//X varias
-
-printResultado += '<table class="table"><tr>';
-for (let contadorB = 0; contadorB < letras.length; contadorB++) {
-    printResultado += '<th class = "borde color-letra">' + letras[contadorB] + '</th>';
-}
-printResultado += '</tr>';
-for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
-    printResultado += '<tr>';
-    for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
+    printResultado += '</tr>';
+    for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
+        printResultado += '<tr>';
+        for (iteracion2 = 0; iteracion2 < 5; iteracion2++) {
         //X1
 
         if (iteracion1 <= 3 && iteracion2 >= 1 && iteracion2 <= 4 && iteracion1 % 2 == 0 && iteracion2 % 2 == 1) {
-            printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-1 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
         } else if (iteracion1 <= 2 && iteracion2 >= 1 && iteracion2 <= 2 && iteracion1 % 2 == 1 && iteracion2 % 2 == 0) {
-            printResultado += '<td class="color-1 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-1 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
             //X2
 
         } else if (iteracion1>=2&&iteracion2<=3&&iteracion1%2==0&&iteracion2%2==0){
-            printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-2 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
         }else if (iteracion1>=2&&iteracion2<=2&&iteracion1%2==1&&iteracion2%2==1){
-            printResultado += '<td class="color-2 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-2 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
             //X3
 
         }else if (iteracion1>=2&&iteracion2>=2&&iteracion1%2==0&&iteracion2%2==0){
-            printResultado += '<td class="color-3 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-3 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
         }else if (iteracion1>=2&&iteracion2>=2&&iteracion1%2==1&&iteracion2%2==1){
-            printResultado += '<td class="color-3 borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="color-3 borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
         }else{
-            printResultado += '<td class="borde">' + bingo[iteracion1][iteracion2] + '</td>';
+            printResultado += '<td class="borde tabla-color">' + bingo[iteracion1][iteracion2] + '</td>';
         }
     }
     printResultado += '</tr>';
-}
-printResultado += '</table>';
+    }
+    printResultado += '</table>';
     
-    document.getElementById('bingo-1').innerHTML = printResultado;
+document.getElementById('bingo-1').innerHTML = printResultado;
 });
