@@ -43,5 +43,4 @@ function calTipo(psumaporc){
     }else{
         return " Nota baja";
     }
-    
 }

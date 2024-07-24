@@ -20,8 +20,6 @@ function operaciones (){
     let rretencion = `Retencion: ${retencion} <br>`;
     let rpagoTotal = `Pago total: ${pagoTotal} <br>`;
 
-
-
     document.getElementById('operaciones').innerHTML = rsalario + rsalud + rpension + rarl + rdescuento + rsubTransporte + rretencion + rpagoTotal
 
     return false;
@@ -33,7 +31,6 @@ function calSalario(pvDia,pdTra){
     let dTra = pdTra;
     salario=vDia*dTra;
     return salario;
-
 }
 
 function calSalud(pvDia,pdTra){
@@ -79,7 +76,6 @@ function calRetencion(pvDia,pdTra){
         retencion=retencion+0;
     }
     return retencion;
-
 }
 
 function calPagoTotal(pvDia,pdTra){

@@ -3,8 +3,6 @@ function operaciones (){
     let fechaActual = parseInt(document.getElementById('txtNumeroDos').value);
 
     let edad = calEdad(fechaNacimiento, fechaActual);
-
-    
     
     let redad = `Tienes ${edad} <br>`
 

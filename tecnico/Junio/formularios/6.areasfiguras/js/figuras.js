@@ -9,11 +9,10 @@ function operaciones (){
     let areaR = rectangulo(baseR,alturaR);
     let areaT = triangulo(baseT,alturaT);
 
-    rareaC = `Area Cuadrado: ${areaC} <br>`;
-    rareaR = `Area Rectangulo: ${areaR} <br>`;
-    rareaT = `Area Triangulo: ${areaT} <br>`;
+    let rareaC = `Area Cuadrado: ${areaC} <br>`;
+    let rareaR = `Area Rectangulo: ${areaR} <br>`;
+    let rareaT = `Area Triangulo: ${areaT} <br>`;
     
-
     document.getElementById('operaciones').innerHTML = rareaC + rareaR + rareaT;
 
     return false;
@@ -31,8 +30,7 @@ function rectangulo(pbase,paltura){
     let base = pbase;
     let altura = paltura;
     area = base * altura;
-    return area;
-    
+    return area; 
 }
 function triangulo(pbase,paltura){
     let area;
@@ -40,5 +38,4 @@ function triangulo(pbase,paltura){
     let altura = paltura
     area = (base * altura) / 2;
     return area;
-
 }

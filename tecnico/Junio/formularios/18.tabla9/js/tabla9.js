@@ -1,14 +1,8 @@
 function operaciones (){
     let num1 = parseInt(document.getElementById('txtNumeroUno').value);
-  
-    
     let tabla =`La tabla del ${num1} hasta 5<br> ${calTabla(num1)}  <br>`;
 
-    
-
     document.getElementById('operaciones').innerHTML = tabla;
-    ;
-
     return false;
 }
 

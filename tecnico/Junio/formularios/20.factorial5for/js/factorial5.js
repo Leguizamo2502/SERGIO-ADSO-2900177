@@ -1,10 +1,8 @@
 function operaciones (){
     let num1 = parseInt(document.getElementById('txtNumeroUno').value);
-    
     let facto = `El factorial de ${num1} es ${factorial(num1)}`;
 
     document.getElementById('operaciones').innerHTML = facto;
-
     return false;
 }
 

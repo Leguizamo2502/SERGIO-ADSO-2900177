@@ -17,8 +17,6 @@ function mayorNum(pnum1, pnum2,pnum3) {
     let num2 = pnum2;
     let num3 = pnum3;
 
-    
-
     if (num1 === num2 && num2 === num3) {
         return "Todos los números son iguales.";
     } else if (num1 >= num2 && num1 >= num3) {

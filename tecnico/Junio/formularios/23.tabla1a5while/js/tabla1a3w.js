@@ -1,10 +1,7 @@
 function operaciones (){
     let num1 = parseInt(document.getElementById('txtNumeroUno').value);
-    
     let tabla = `Tabla del ${num1} <br> ${calTabla(num1)}`
-
     document.getElementById('operaciones').innerHTML = tabla;
-
     return false;
 }
 
@@ -19,7 +16,6 @@ function calTabla(phasta){
     while(contar1<hasta){
         contar2=0
         contar1=contar1+1;
-
         while(contar2<hasta){
             contar2=contar2+1;
             multiplicacion=contar1*contar2;
@@ -34,8 +30,5 @@ function calTabla(phasta){
             }
         }
     }
-    
     return resultado+"hay "+par+" pares"+`<br>`+"hay "+impar+" impares";
-    
-
 }

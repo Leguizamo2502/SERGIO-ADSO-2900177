@@ -16,7 +16,6 @@ function operaciones (){
 
     let rpromedio = `El promedio de las edades es de ${promEdad} años y `+ calMayor(promEdad);
     
-
     document.getElementById('operaciones').innerHTML = redad1 + redad2 + redad3 + rpromedio;
 
     return false;

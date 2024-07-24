@@ -1,7 +1,6 @@
 function operaciones (){
     let pagoDia = parseInt(document.getElementById('txtNumeroUno').value);
     let diasTrabajados = parseInt(document.getElementById('txtNumeroDos').value);
-
     let salario1 = calcularSalario(pagoDia, diasTrabajados);
     let salud1 = calcularSalud(pagoDia, diasTrabajados);
     let pension1 = calcularPension(pagoDia, diasTrabajados);
@@ -9,17 +8,13 @@ function operaciones (){
     let descuento1 = calcularDescuento(pagoDia, diasTrabajados);
     let pagoTotal1 = calcularPago(pagoDia, diasTrabajados);
 
-
-
-
-    rsalario = `Salario bruto: ${salario1} <br>`;
-    rsalud = `Salud: ${salud1} <br>`;
-    rpension = `Pension: ${pension1} <br>`;
-    rarl = `Arl: ${arl1} <br>`;
-    rdescuento = `Descuento: ${descuento1} <br>`;
-    rpagoTotal = `Pago total: ${pagoTotal1} <br>`;
+    let rsalario = `Salario bruto: ${salario1} <br>`;
+    let rsalud = `Salud: ${salud1} <br>`;
+    let rpension = `Pension: ${pension1} <br>`;
+    let rarl = `Arl: ${arl1} <br>`;
+    let rdescuento = `Descuento: ${descuento1} <br>`;
+    let rpagoTotal = `Pago total: ${pagoTotal1} <br>`;
     
-
     document.getElementById('operaciones').innerHTML = rsalario + rsalud + rpension + rarl + rdescuento + rpagoTotal;
 
     return false;
@@ -64,5 +59,4 @@ function calcularPago(pavalorDia, pdiasTrab){
     let pago;
     pago = salario - descuento;
     return pago;
-   
 }

@@ -3,7 +3,6 @@ function operaciones (){
     
     let rnumero = `${calNum(num1)}`;
 
-
     document.getElementById('operaciones').innerHTML = rnumero;
 
     return false;

@@ -1,10 +1,7 @@
 function operaciones (){
-    let num1 = parseInt(document.getElementById('txtNumeroUno').value);
-    
+    let num1 = parseInt(document.getElementById('txtNumeroUno').value); 
     let tabla = `Tabla del ${num1} <br> ${calTabla(num1)}`
-
     document.getElementById('operaciones').innerHTML = tabla;
-
     return false;
 }
 
@@ -32,8 +29,6 @@ function calTabla(pnumero) {
             }
             multiplicar++;
         }
-
     }
-    
     return resultadoTotal+"hay "+par+" pares"+`<br>`+"hay "+impar+" impares"+`<br>`;
 }

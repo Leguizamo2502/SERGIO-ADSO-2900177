@@ -1,12 +1,8 @@
 function operaciones (){
     let num1 = parseInt(document.getElementById('txtNumeroUno').value);
-    
     let rtabla = `Tabla del ${num1} hasta 5 <br> ${calTabla(num1)}`;
 
-    
-
     document.getElementById('operaciones').innerHTML = rtabla;
-
     return false;
 }
 

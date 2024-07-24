@@ -8,14 +8,12 @@ function operaciones (){
     let porc3 = porNota(num3,0.4);
 
     let sumaprom = suma(porc1,porc2,porc3);
-    rporc1 = `Nota Uno ${porc1} <br>`;
-    rporc2 = `Nota Dos ${porc2} <br>`;
-    rporc3 = `Nota Tres ${porc3} <br>`;
+    let rporc1 = `Nota Uno ${porc1} <br>`;
+    let rporc2 = `Nota Dos ${porc2} <br>`;
+    let rporc3 = `Nota Tres ${porc3} <br>`;
 
-
-    rsumaprom = `Nota Total: ${sumaprom} <br>`;
+    let rsumaprom = `Nota Total: ${sumaprom} <br>`;
     
-
     document.getElementById('operaciones').innerHTML = rporc1 + rporc2 + rporc3 + rsumaprom;
 
     return false;
