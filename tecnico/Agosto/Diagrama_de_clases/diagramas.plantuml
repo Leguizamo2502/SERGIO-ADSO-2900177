@@ -1,0 +1,51 @@
+@startuml = diagramas
+class jugador {
+ -Nombre
+ -ID_jugador
+ --
+ +jugar()
+}
+class carta {
+ -ID_carta
+--
+ +voltear()
+ +verificar_correcto()
+}
+
+class puntos {
+ -puntuacion
+--
+ +obtener_puntuacion()
+}
+
+class tabla_puntuacion {
+ -fecha
+--
+ +calcular_puestos()
+}
+
+class dificultad {
+ -dificultad
+--
+ +aplicar_dificultad()
+}
+
+class juego {
+ -nombre
+--
+ +iniciar()
+ +finalizar()
+}
+
+ jugador -- carta
+ 
+ carta <|-- tabla_puntuacion
+ jugador <|-- tabla_puntuacion
+ puntos ..> carta
+ jugador o-- dificultad
+
+ juego *-- jugador
+
+
+
+@enduml
