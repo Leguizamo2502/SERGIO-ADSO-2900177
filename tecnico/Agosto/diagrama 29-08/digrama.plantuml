@@ -1,0 +1,134 @@
+@startuml = diagrama
+Class ContenidoNetflix {
+    -titulo
+    -genero
+    -descripcion
+    -clasificacion
+    -calificacion
+    -reparto
+    -productoras
+    -trailer
+--
+    +mostrarDescripcion()
+    +repruducirContenido()
+    +verificarCalificaion()
+    +verificarClalificaion()
+}
+
+class Pelicula {
+    -duracion
+--
+    +elegirPelicula()
+}
+
+
+class Series {
+    -temporadas
+    -episodios
+--
+    +elegirTemporada()
+    +elegirEpisodio()
+    
+}
+
+class Documentales {
+    -episodios
+--
+    +elegirDocumental()
+}
+
+class metodoPago {
+    -tarjeta
+    -puntoFisico
+--
+    +verificarPago()
+}
+
+class cuenta{
+    -nombre
+    -correo
+    -contraseña
+    -perfiles
+--
+    +modificarNombre()
+    +modificarCorreo()
+    +modificarContraseña()
+    +eliminarCuenta()
+    +eliminarPerfil()
+    +crearPerfil()
+}
+
+
+class configuracionVideo {
+    -subtitulos
+    -idioma
+    -calidadVideo
+--
+    +modificarSubtitulos()
+    +modificarIdioma()
+    +modificarCalidadVideo()
+}
+
+class ranking {
+    -puestos
+--
+    +verificarPopularidad()
+}
+class Region {
+    -pais
+--
+    +restringirCOntenido()
+}
+
+class Historial {
+    -registroContenido
+    -progreso
+--
+    +mostrarContenidoVisto()
+    +calcularProgreso()
+    +eliminarHistorial()
+}
+
+class temporadas {
+    -nombre
+    -episodios
+--
+    +mostrarEpisodios()
+}
+class suscripcion {
+    -planSuscripcion
+--
+    +elegirPlan()
+}
+
+class factura {
+    -montoPago
+    -fechaPago
+    -numeroFactura
+--
+    +generarFactura()
+    +enviarFactura()
+}
+
+ContenidoNetflix <|-- Pelicula
+ContenidoNetflix <|-- Series 
+ContenidoNetflix <|-- Documentales
+Region o-- ranking
+ContenidoNetflix o-- Region
+Pelicula o-- Historial
+Series o-- Historial
+Documentales o-- Historial
+Series *-- temporadas
+cuenta o-- suscripcion
+suscripcion *-- metodoPago
+factura o-- metodoPago
+ContenidoNetflix -- configuracionVideo
+
+
+
+
+
+
+
+
+@enduml
