@@ -9,15 +9,15 @@ class areaFigura{
     public $baseTriangulo=5;
     public $areaTriangulo;
 
-    public function calcularAreaCuadrado(){
+    public function calAreaCuadrado(){
         $this->areaCuadrado = $this->ladoCuadrado * $this->ladoCuadrado;
         return $this->areaCuadrado;
     }
-    public function calcularAreaRectangulo(){
+    public function calAreaRectangulo(){
         $this->areaRectangulo = $this->baseRectangulo * $this->alturaRectangulo;
         return $this->areaRectangulo;
     }
-    public function calcularAreaTriangulo(){
+    public function calAreaTriangulo(){
         $this->areaTriangulo = ($this->baseTriangulo * $this->alturaTriangulo) / 2;
         return $this->areaTriangulo;
     }

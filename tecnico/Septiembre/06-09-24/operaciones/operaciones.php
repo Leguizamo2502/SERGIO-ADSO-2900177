@@ -23,8 +23,6 @@ class operacion{
         $this -> division = $this->numeroUno / $this->numeroDos;
         return $this-> division;
     }
-
-
 }
 
 

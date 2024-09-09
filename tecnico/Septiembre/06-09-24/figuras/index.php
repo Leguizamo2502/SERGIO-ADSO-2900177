@@ -2,9 +2,9 @@
 include('figuras.php');
 $area = new areaFigura();
 
-echo "Área Cuadrado: ". $area->calcularAreaCuadrado(). "<br>";
-echo "Área Rectángulo: ". $area->calcularAreaRectangulo(). "<br>";
-echo "Área Triángulo: ". $area->calcularAreaTriangulo(). "<br>";
+echo "Área Cuadrado: ". $area->calAreaCuadrado(). "<br>";
+echo "Área Rectángulo: ". $area->calAreaRectangulo(). "<br>";
+echo "Área Triángulo: ". $area->calAreaTriangulo(). "<br>";
 
 
 ?>

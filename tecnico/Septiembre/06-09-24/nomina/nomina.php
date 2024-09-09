@@ -1,6 +1,6 @@
 <?php
 class Nomina{
-    public $vDia = 200000;
+    public $vDia = 50000;
     public $dTra = 30;
     public $salario;
     public $salud;

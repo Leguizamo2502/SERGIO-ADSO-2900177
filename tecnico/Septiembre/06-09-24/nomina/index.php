@@ -1,13 +1,13 @@
 <?php
 include('nomina.php');
-$mostrarNomina = new Nomina();
+$nomina = new Nomina();
 
-echo "Salario: ".$mostrarNomina->calSalario()."<br>";
-echo "Salud: ".$mostrarNomina->calSalud()."<br>";
-echo "Pension: ".$mostrarNomina->calPension()."<br>";
-echo "Arl: ".$mostrarNomina->calArl()."<br>";
-echo "Descuento: ".$mostrarNomina->calDescuento()."<br>";
-echo "SubTransporte: ".$mostrarNomina->calSubTransporte()."<br>";
-echo "Retención: ".$mostrarNomina->calRetencion()."<br>";
-echo "Pago total: ".$mostrarNomina->calPagoTotal()."<br>";
+echo "Salario: ".$nomina->calSalario()."<br>";
+echo "Salud: ".$nomina->calSalud()."<br>";
+echo "Pension: ".$nomina->calPension()."<br>";
+echo "Arl: ".$nomina->calArl()."<br>";
+echo "Descuento: ".$nomina->calDescuento()."<br>";
+echo "SubTransporte: ".$nomina->calSubTransporte()."<br>";
+echo "Retención: ".$nomina->calRetencion()."<br>";
+echo "Pago total: ".$nomina->calPagoTotal()."<br>";
 ?>
