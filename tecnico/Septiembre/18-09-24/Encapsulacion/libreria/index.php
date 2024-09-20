@@ -1,23 +1,21 @@
 <?php
-include('operaciones.php');
-$num = new numeros();
-$num->setNumeroUno(10);
-$num->setNumeroDos(5);
+    include ('saludo.php');
 
-$oper = new operaciones();
+    $saludo = new Saludo();
+    $saludo->setSaludar('lola');
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Saludo</title>
 </head>
 <body>
     <?php
 
+    echo '<h1>'. $saludo->getSaludar().'</h1>';
 
     ?>
 </body>

@@ -1,29 +1,51 @@
 <?php
+class numeros{
+    private $numeroUno;
+    private $numeroDos;
+
+    public function setNumeroUno($numeroUno){
+        $this->numeroUno = $numeroUno;
+    }
+    public function getNumeroUno(){
+        return $this->numeroUno;
+    }
+    public function setNumeroDos($numeroDos){
+        $this->numeroDos = $numeroDos;
+    }
+    public function getNumeroDos(){
+        return $this->numeroDos;
+    }
+}
+
 class operacion{
-    public $numeroUno = 5;
-    public $numeroDos = 2;
+    public $numeroUno;
+    public $numeroDos;
     public $suma;
     public $resta;
     public $multiplicacion;
     public $division;
 
-    public function sumar(){
-        $this -> suma = $this->numeroUno + $this->numeroDos;
-        return $this-> suma;
+
+
+    public function ($numeroUno,$numeroDos){
+        $this->resta = $numeroUno + $numeroDos;
+        return $this->resta;
     }
-    public function restar(){
-        $this -> resta = $this->numeroUno - $this->numeroDos;
-        return $this-> resta;
+    public function ($numeroUno,$numeroDos){
+        $this->resta = $numeroUno - $numeroDos;
+        return $this->resta;
     }
-    public function multiplicar(){
-        $this -> multiplicacion = $this->numeroUno * $this->numeroDos;
-        return $this-> multiplicacion;
+    public function ($numeroUno,$numeroDos){
+        $this->multiplicacion = $numeroUno * $numeroDos;
+        return $this->multiplicacion;
     }
-    public function dividir(){
-        $this -> division = $this->numeroUno / $this->numeroDos;
-        return $this-> division;
+    public function ($numeroUno,$numeroDos){
+        $this->division = $numeroUno / $numeroDos;
+        return $this->division;
     }
+
 }
+
 
 
 ?>

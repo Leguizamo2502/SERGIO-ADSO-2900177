@@ -1,10 +1,8 @@
 <?php
-include('operaciones.php');
-$num = new numeros();
-$num->setNumeroUno(10);
-$num->setNumeroDos(5);
+include('main.php');
+$num1 = new Numero(10);
+$num2 = new Numero(5);
 
-$oper = new operaciones();
 ?>
 
 
@@ -17,8 +15,8 @@ $oper = new operaciones();
 </head>
 <body>
     <?php
-
-
+    echo "Suma: ". $num1->sumar($num2). "<br>";
     ?>
+    
 </body>
 </html>

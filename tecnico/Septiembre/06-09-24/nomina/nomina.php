@@ -1,7 +1,7 @@
 <?php
 class Nomina{
-    public $vDia = 50000;
-    public $dTra = 30;
+    private $vDia;
+    private $dTra;
     public $salario;
     public $salud;
     public $pension;
@@ -10,6 +10,19 @@ class Nomina{
     public $subTransporte;
     public $retencion;
     public $pagoTotal;
+
+    public function setVDia($vDia) {
+        $this->vDia = $vDia;
+    }
+    public function getVDia() {
+        return $this->vDia;
+    }
+    public function setDTra($dTra) {
+        $this->dTra = $dTra;
+    }
+    public function getDTra() {
+        return $this->dTra;
+    }
 
     public function calSalario(){
         $this->salario = $this->vDia * $this->dTra;
