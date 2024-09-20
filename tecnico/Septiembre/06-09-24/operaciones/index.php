@@ -1,10 +1,6 @@
 <?php
 include('operaciones.php');
-$num = new numeros();
-$num->setNumeroUno(10);
-$num->setNumeroDos(5);
-
-$oper = new operaciones();
+$operaciones = new Numeros();
 ?>
 
 
@@ -17,7 +13,10 @@ $oper = new operaciones();
 </head>
 <body>
     <?php
-
+    echo 'Suma: '. $operaciones->sumar().'<br>';
+    echo 'Resta: '. $operaciones->restar().'<br>';
+    echo 'Multiplicacion: '. $operaciones->multiplicar().'<br>';
+    echo 'Division: '. $operaciones->dividir().'<br>';
 
     ?>
 </body>

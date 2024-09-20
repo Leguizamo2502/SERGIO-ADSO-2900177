@@ -1,7 +1,29 @@
 <?php
-class Nomina{
-    private $vDia;
-    private $dTra;
+class Datos {
+    private $totalDias;
+    private $valorDia;
+
+    public function __construct($totalDias, $valorDia) {
+        $this->totalDias = $totalDias;
+        $this->valorDia = $valorDia;
+    }
+    public function setTotalDias($totalDias) {
+        $this->totalDias = $totalDias;
+    }
+    public function getTotalDias() {
+        return $this->totalDias;
+    }
+    public function setValorDia($valorDia) {
+        $this->valorDia = $valorDia;
+    }
+    public function getValorDia() {
+        return $this->valorDia;
+    }
+
+}
+
+class Nomina {
+    private $valor;
     public $salario;
     public $salud;
     public $pension;
@@ -11,21 +33,14 @@ class Nomina{
     public $retencion;
     public $pagoTotal;
 
-    public function setVDia($vDia) {
-        $this->vDia = $vDia;
-    }
-    public function getVDia() {
-        return $this->vDia;
-    }
-    public function setDTra($dTra) {
-        $this->dTra = $dTra;
-    }
-    public function getDTra() {
-        return $this->dTra;
+    public function __construct(Datos $valor){
+        $this->valor = $valor;
+        
+
     }
 
     public function calSalario(){
-        $this->salario = $this->vDia * $this->dTra;
+        $this->salario = $this->valor->getTotalDias() * $this->valor->getValorDia();
         return $this->salario;
     }
     public function calSalud(){
@@ -35,34 +50,37 @@ class Nomina{
     public function calPension(){
         $this->pension = $this->salario * 0.16;
         return $this->pension;
-    }
+    }    
     public function calArl(){
         $this->arl = $this->salario * 0.052;
         return $this->arl;
     }
-    public function calDescuento(){
-        $this->descuento = $this->salud + $this->pension + $this->arl;
+    public function descuento(){
+        $this->descuento = $this->salud + $this->pension+ $this->arl;
         return $this->descuento;
     }
+
     public function calSubTransporte(){
-        if($this->salario < (2*1300000)){
-            $this->subTransporte = 114000;
-        } else {
-            $this->subTransporte = 0;
+        $smn = 1300000;
+        if($this->salario<$smn){
+            $this->subTransporte=114000;
+        }else{
+            $this->subTransporte =0;
         }
-        return $this->subTransporte;
     }
     public function calRetencion(){
-        if ($this->salario > (4*1300000)){
-            $this->retencion = $this->salario * 0.04;
+        $smn = 1300000;
+        if($this->salario>($smn*4)){
+            $this->retencion=$this->salario*0.04;
         }else{
-            $this->retencion = 0;
+            $this->retencion =0;
         }
-        return $this->retencion;
     }
+
     public function calPagoTotal(){
         $this->pagoTotal = ($this->salario + $this->subTransporte) - ($this->descuento + $this->retencion);
         return $this->pagoTotal;
     }
+
 }
 ?>

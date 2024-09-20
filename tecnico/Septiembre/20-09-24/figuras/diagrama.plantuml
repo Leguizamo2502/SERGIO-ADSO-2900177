@@ -1,0 +1,27 @@
+@startuml = lola
+    class Valores {
+        - lado
+        - base
+        - altura
+        + __construct($lado, $base, $altura)
+        + setLado($lado)
+        + setBase($base)
+        + setAltura($altura)
+        + getLado()
+        + getBase()
+        + getAltura()
+    }
+
+    class Areas {
+        - valor : Valores
+        + areaCuadrado
+        + areaRectangulo
+        + areaTriangulo
+        + __construct(valor : Valores)
+        + areaCuad()
+        + areaRect()
+        + areaTriangulo()
+    }
+
+    Areas --> Valores : utiliza
+@enduml
