@@ -1,19 +1,4 @@
 <?php
-class Numero {
-    private $valor;
-
-    public function __construct($valor) {
-        $this->valor = $valor;
-    }
-
-    public function setValor($valor) {
-        $this->valor = $valor; 
-    }
-
-    public function getValor() {
-        return $this->valor;
-    }
-}
 
 class Operaciones {
     private $numeroUno;
