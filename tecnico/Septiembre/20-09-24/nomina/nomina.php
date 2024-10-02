@@ -43,6 +43,7 @@ class Nomina {
         }else{
             $this->subTransporte =0;
         }
+        return $this->subTransporte;
     }
     public function calRetencion(){
         $smn = 1300000;
@@ -51,6 +52,7 @@ class Nomina {
         }else{
             $this->retencion =0;
         }
+        return $this->retencion;
     }
 
     public function calPagoTotal(){

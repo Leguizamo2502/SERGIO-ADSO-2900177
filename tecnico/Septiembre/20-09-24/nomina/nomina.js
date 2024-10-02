@@ -6,7 +6,7 @@ function realizarOperaciones(){
         },
         body: JSON.stringify({
             diasTrabajados: 30,
-            valorDia: 10000
+            valorDia: 50000
         })
     })
     .then(response =>response.json())
@@ -19,9 +19,9 @@ function realizarOperaciones(){
             document.getElementById('pension').textContent=`Pension: ${data.pension}`;
             document.getElementById('arl').textContent=`Arl: ${data.arl}`;
             document.getElementById('descuento').textContent=`Descuento: ${data.descuento}`;
-            document.getElementById('subTransporte').textContent=`subTransporte: ${data.subTransporte}`;
-            document.getElementById('retencion').textContent=`retencion: ${data.retencion}`;
-            document.getElementById('pagoTotal').textContent=`pagoTotal: ${data.pagoTotal}`;
+            document.getElementById('subTransporte').textContent=`Subsidio de Transporte: ${data.subTransporte}`;
+            document.getElementById('retencion').textContent=`Retencion: ${data.retencion}`;
+            document.getElementById('pagoTotal').textContent=`Pago Total: ${data.pagoTotal}`;
         }
     })
     .catch(error=>console.error('Error:',error));
