@@ -38,7 +38,7 @@ class Nomina {
 
     public function calSubTransporte(){
         $smn = 1300000;
-        if($this->salario<$smn){
+        if($this->salario<($smn*2)){
             $this->subTransporte=114000;
         }else{
             $this->subTransporte =0;
