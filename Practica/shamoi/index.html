@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cosa.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop con Interact.js (Solución)</title>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      border: 1px solid #ccc;
+    }
+
+    .draggable {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 150px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      cursor: grab;
+      z-index: 10; /* Asegurarse que el draggable esté siempre encima */
+    }
+
+    .dropzone {
+      width: 200px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      text-align: center;
+      line-height: 200px;
+      background-color: #f0f0f0;
+      position: absolute;
+      top: 300px;
+      left: 50px;
+      z-index: 1; /* La dropzone está detrás del draggable */
+    }
+  </style>
 </head>
 <body>
-    <div class="elemento-con-sombra">
-        <p>Contenido con sombra de rayos</p>
-      </div>
+
+  <div class="container">
+    <div id="drag-1" class="draggable">Arrastra esto</div>
+    <div id="drop-1" class="dropzone">Suelta aquí</div>
+  </div>
+
+  <script>
+    interact('.draggable')
+      .draggable({
+        listeners: {
+          start (event) {
+            // Aumentamos el z-index cuando el arrastre comienza
+            event.target.style.zIndex = '1000';
+          },
+          move (event) {
+            const target = event.target;
+
+            // Obtener las posiciones iniciales desde top y left
+            const x = (parseFloat(target.getAttribute('data-x')) || target.offsetLeft) + event.dx;
+            const y = (parseFloat(target.getAttribute('data-y')) || target.offsetTop) + event.dy;
+
+            // Aplicar los valores calculados directamente a top y left
+            target.style.left = `${x}px`;
+            target.style.top = `${y}px`;
+
+            // Guardar la nueva posición
+            target.setAttribute('data-x', x);
+            target.setAttribute('data-y', y);
+          },
+          end (event) {
+            // Restauramos el z-index cuando se termine el arrastre
+            event.target.style.zIndex = '10';
+          }
+        }
+      });
+
+    interact('.dropzone').dropzone({
+      ondrop (event) {
+        const dropzoneElement = event.target;
+        const draggableElement = event.relatedTarget; // Elemento arrastrado
+
+        // Cambiamos el contenido y el color de la dropzone al soltar
+        dropzoneElement.style.backgroundColor = 'lightgreen';
+        dropzoneElement.textContent = '¡Elemento soltado!';
+
+        // Nos aseguramos de que el elemento arrastrado siga siendo arrastrable
+        draggableElement.style.zIndex = '1000'; // Mantener por encima
+      },
+      ondragenter (event) {
+        const dropzoneElement = event.target;
+        dropzoneElement.style.border = '2px solid green';
+      },
+      ondragleave (event) {
+        const dropzoneElement = event.target;
+        dropzoneElement.style.border = '2px dashed #ccc';
+      }
+    });
+  </script>
+
 </body>
 </html>
