@@ -72,68 +72,68 @@ function calPagoTotal(pvDia,pdTra){
  * constante 
  */
 
-const calSalario2=function(pvDia,pdTra){
-    let salario;
-    let vDia = pvDia;
-    let dTra = pdTra;
-    salario=vDia*dTra;
-    return salario;
+// const calSalario2=function(pvDia,pdTra){
+//     let salario;
+//     let vDia = pvDia;
+//     let dTra = pdTra;
+//     salario=vDia*dTra;
+//     return salario;
 
-}
+// }
 
-const calSalud2=function(pvDia,pdTra){
-    let salud = calSalario2(pvDia,pdTra)*0.12;
-    return salud;
+// const calSalud2=function(pvDia,pdTra){
+//     let salud = calSalario2(pvDia,pdTra)*0.12;
+//     return salud;
 
-}
+// }
 
-const calPension2=function(pvDia,pdTra){
-    let pension = calSalario2(pvDia,pdTra)*0.16;
-    return pension;
+// const calPension2=function(pvDia,pdTra){
+//     let pension = calSalario2(pvDia,pdTra)*0.16;
+//     return pension;
 
-}
+// }
 
-const calArl2=function(pvDia,pdTra){
-    let arl = calSalario2(pvDia,pdTra)*0.052;
-    return arl;
-}
+// const calArl2=function(pvDia,pdTra){
+//     let arl = calSalario2(pvDia,pdTra)*0.052;
+//     return arl;
+// }
 
-const calDescuento2=function(pvDia,pdTra){
-    let salud= calSalud2(pvDia,pdTra);
-    let pension= calPension2(pvDia,pdTra);
-    let arl= calArl2(pvDia,pdTra);
-    let descuento;
-    descuento = salud+pension+arl;
-    return descuento;
-}
+// const calDescuento2=function(pvDia,pdTra){
+//     let salud= calSalud2(pvDia,pdTra);
+//     let pension= calPension2(pvDia,pdTra);
+//     let arl= calArl2(pvDia,pdTra);
+//     let descuento;
+//     descuento = salud+pension+arl;
+//     return descuento;
+// }
 
-const calSubTransporte2=function(pvDia,pdTra){
-    let subTransporte = 0;
-    if(calSalario2(pvDia,pdTra)<(2*1300000)){
-        subTransporte = subTransporte+114000;
-    }else{
-        subTransporte = subTransporte+0;
-    }
-    return subTransporte;
-}
-const calRetencion2=function(pvDia,pdTra){
-    let retencion= 0;
-    if(calSalario2(pvDia,pdTra)>(4*1300000)){
-        retencion=calSalario2(pvDia,pdTra)*0.04;
-    }else{
-        retencion=retencion+0;
-    }
-    return retencion;
+// const calSubTransporte2=function(pvDia,pdTra){
+//     let subTransporte = 0;
+//     if(calSalario2(pvDia,pdTra)<(2*1300000)){
+//         subTransporte = subTransporte+114000;
+//     }else{
+//         subTransporte = subTransporte+0;
+//     }
+//     return subTransporte;
+// }
+// const calRetencion2=function(pvDia,pdTra){
+//     let retencion= 0;
+//     if(calSalario2(pvDia,pdTra)>(4*1300000)){
+//         retencion=calSalario2(pvDia,pdTra)*0.04;
+//     }else{
+//         retencion=retencion+0;
+//     }
+//     return retencion;
 
-}
+// }
 
-const calPagoTotal2=function(pvDia,pdTra){
-    let salario= calSalario2(pvDia,pdTra);
-    let subTransporte= calSubTransporte2(pvDia,pdTra);
-    let descuento= calDescuento2(pvDia,pdTra);
-    let retencion= calRetencion2(pvDia,pdTra);
-    let pagoTotal;
-    pagoTotal = (salario+subTransporte)-(descuento+retencion);
-    return pagoTotal;
+// const calPagoTotal2=function(pvDia,pdTra){
+//     let salario= calSalario2(pvDia,pdTra);
+//     let subTransporte= calSubTransporte2(pvDia,pdTra);
+//     let descuento= calDescuento2(pvDia,pdTra);
+//     let retencion= calRetencion2(pvDia,pdTra);
+//     let pagoTotal;
+//     pagoTotal = (salario+subTransporte)-(descuento+retencion);
+//     return pagoTotal;
 
-}
+// }
