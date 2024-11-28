@@ -7,7 +7,7 @@ DELIMITER $$
                 ROLLBACK;
             END;
             START TRANSACTION;
-                IF (SELECT COUNT(*) FROM Autor WHERE nombre = @nombre_a AND apellido = @apellido_a) THEN -- Insertar
+                IF (SELECT COUNT(*) FROM Autor WHERE nombre = @nombre_a AND apellido = @apellido_a)>0 THEN -- Insertar
                     SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'El autor ya existe';
                     ELSE
                         INSERT INTO Autor VALUES (1,'Gabriel','Marquez'),(2, 'Jorge', 'Borges'),(3, 'Isabel', 'Allende'),(4, 'Mario', 'Vargas Llosa'),(5, 'Gabriel', 'García Márquez'),(@id_a,@nombre_a,@apellido_a);
